@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Palette inspirée du logo - Chaud & Apaisant */
+  --color-primary: #8B6F47; /* Bronze doré du logo */
+  --color-primary-dark: #6B5535;
+  --color-primary-light: #C4A265;
+  --color-secondary: #D4AF37; /* Or */
+  --color-secondary-light: #F4E4BA;
+  --color-accent: #C97B5D; /* Terre cuite douce */
+
+  /* Neutres chauds */
+  --color-cream: #FDFBF8;
+  --color-warm-light: #F5EDE3;
+  --color-white: #ffffff;
+  --color-dark: #3A2F25;
+  --color-gray: #7D7068;
+  --color-gray-light: #E8E0D6;
+
+  /* Background */
+  --background: var(--color-cream);
+  --foreground: var(--color-dark);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-cormorant), Georgia, serif;
+  --font-body: var(--font-lato), system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Animations personnalisées */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Délais d'animation */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* Séparateur doré */
+.separator-gold {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+}
+
+/* Scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-primary-light);
+  color: white;
 }
