@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import CalendlyButton from "@/components/CalendlyButton";
 
 export const metadata: Metadata = {
   title: "Soins Énergétiques | Les Clés Vibratoires",
@@ -347,12 +348,7 @@ export default function SoinsEnergetiques() {
                     <span className="text-[#7D7068]">Appel avant et après le soin</span>
                   </li>
                 </ul>
-                <Link
-                  href="/contact"
-                  className="block w-full py-4 bg-[#8B6F47] text-white text-center rounded-full hover:bg-[#6B5535] transition-colors font-medium"
-                >
-                  Prendre rendez-vous
-                </Link>
+                <CalendlyButton className="w-full" />
               </div>
             </div>
           </div>
@@ -405,15 +401,10 @@ export default function SoinsEnergetiques() {
             Offrez-vous un soin énergétique pour retrouver harmonie et bien-être.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="px-8 py-4 bg-white text-[#8B6F47] rounded-full hover:bg-[#F5EDE3] transition-all duration-300 font-medium text-lg"
-            >
-              Prendre rendez-vous
-            </Link>
+            <CalendlyButton variant="white" />
             <Link
               href="/numerologie"
-              className="px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all duration-300 font-medium text-lg"
+              className="px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all duration-300 font-medium text-lg inline-flex items-center justify-center"
             >
               Découvrir la numérologie
             </Link>

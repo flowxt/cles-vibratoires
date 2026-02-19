@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CalendlyButton from "@/components/CalendlyButton";
 
 export default function Home() {
   return (
@@ -17,13 +18,12 @@ export default function Home() {
           <div className="text-center">
             {/* Subtitle */}
             <p className="text-[#8B6F47] text-sm sm:text-base tracking-[0.3em] uppercase mb-6 animate-fade-in">
-              Numérologie Stratégique • Magnétisme
+              Numérologie Stratégique • Magnétisme • Tarologie
             </p>
             
             {/* Main title */}
             <h1 className="font-[family-name:var(--font-cormorant)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#3A2F25] mb-6 animate-fade-in delay-100">
-              Les Clés
-              <span className="block text-[#8B6F47]">Vibratoires</span>
+              Les Clés Vibratoires
             </h1>
             
             {/* Separator */}
@@ -37,15 +37,12 @@ export default function Home() {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-400">
-              <Link
-                href="/contact"
-                className="px-8 py-4 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-xl hover:-translate-y-1"
-              >
+              <CalendlyButton>
                 Prendre Rendez-vous
-              </Link>
+              </CalendlyButton>
               <Link
                 href="/a-propos"
-                className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg"
+                className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg inline-flex items-center justify-center"
               >
                 Découvrir mon approche
               </Link>
@@ -261,12 +258,9 @@ export default function Home() {
               je vous accompagne dans votre cheminement vers une meilleure connaissance de vous-même.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="px-8 py-4 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-xl hover:-translate-y-1"
-              >
-                Me contacter
-              </Link>
+              <CalendlyButton>
+                Prendre rendez-vous
+              </CalendlyButton>
               <a
                 href="https://instagram.com/lesclesvibratoires"
                 target="_blank"

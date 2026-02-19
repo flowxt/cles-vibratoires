@@ -30,14 +30,9 @@ export default function Header() {
               className="w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] object-contain"
               priority
             />
-            <div className="hidden sm:flex flex-col">
-              <span className="font-[family-name:var(--font-cormorant)] text-xl lg:text-2xl font-medium text-[#8B6F47]">
-                Les Clés Vibratoires
-              </span>
-              <span className="text-[10px] lg:text-xs text-[#7D7068] tracking-[0.15em]">
-                Numérologie Stratégique • Magnétisme
-              </span>
-            </div>
+            <span className="hidden sm:block font-[family-name:var(--font-cormorant)] text-xl lg:text-2xl font-medium text-[#8B6F47]">
+              Les Clés Vibratoires
+            </span>
           </Link>
 
           {/* Navigation Desktop */}

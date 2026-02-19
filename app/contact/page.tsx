@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
+import CalendlyButton from "@/components/CalendlyButton";
 
 export const metadata: Metadata = {
   title: "Contact | Les Clés Vibratoires",
   description:
-    "Contactez Marie pour prendre rendez-vous en numérologie stratégique ou soins énergétiques. Haute-Savoie et consultations à distance.",
+    "Contactez Marie pour prendre rendez-vous en numérologie stratégique ou soins énergétiques. Megève, Haute-Savoie et consultations à distance.",
 };
 
 export default function Contact() {
@@ -74,37 +76,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Téléphone */}
-                <div className="flex items-start gap-4 p-6 bg-[#FDFBF8] rounded-xl hover:shadow-md transition-shadow">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#8B6F47] rounded-full flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-[#3A2F25] mb-1">Téléphone</h3>
-                    <a
-                      href="tel:0626438979"
-                      className="text-[#8B6F47] hover:text-[#6B5535] transition-colors"
-                    >
-                      06 26 43 89 79
-                    </a>
-                    <p className="text-sm text-[#7D7068] mt-1">
-                      Appel ou SMS
-                    </p>
-                  </div>
-                </div>
-
                 {/* Localisation */}
                 <div className="flex items-start gap-4 p-6 bg-[#FDFBF8] rounded-xl hover:shadow-md transition-shadow">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#8B6F47] rounded-full flex items-center justify-center">
@@ -131,7 +102,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-[#3A2F25] mb-1">Localisation</h3>
                     <p className="text-[#7D7068]">
-                      Haute-Savoie (Thyez et environs)
+                      Haute-Savoie (Megève et environs)
                     </p>
                     <p className="text-sm text-[#7D7068] mt-1">
                       Consultations à distance également disponibles
@@ -307,53 +278,59 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-[#92400e] mb-1">Pour prendre rendez-vous</h4>
                     <p className="text-[#92400e]/80 text-sm">
-                      Contactez-moi par email ou téléphone. Nous conviendrons ensemble 
-                      d&apos;un créneau qui vous convient. Le règlement s&apos;effectue après la séance.
+                      Réservez directement en ligne via le calendrier ci-dessous, ou contactez-moi
+                      par email. Le règlement s&apos;effectue après la séance.
                     </p>
                   </div>
                 </div>
+              </div>
+
+              <div className="mt-6">
+                <CalendlyButton variant="primary" className="w-full text-base" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Horaires & Disponibilités */}
+      {/* Réserver en ligne */}
       <section className="py-16 bg-[#FDFBF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-[family-name:var(--font-cormorant)] text-3xl font-semibold text-[#3A2F25] mb-4">
-              Disponibilités
+              Réserver en ligne
             </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto" />
+            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
+            <p className="text-[#7D7068] max-w-2xl mx-auto">
+              Choisissez le créneau qui vous convient directement en ligne. 
+              Pour la numérologie, un délai de préparation de 3 semaines est nécessaire avant votre consultation.
+            </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="grid sm:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-semibold text-[#3A2F25] mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Consultations sur rendez-vous
-                </h3>
-                <p className="text-[#7D7068]">
-                  Les consultations se font sur rendez-vous, selon nos disponibilités communes. 
-                  Je m&apos;adapte au mieux à votre emploi du temps.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-[#3A2F25] mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  À distance ou en présentiel
-                </h3>
-                <p className="text-[#7D7068]">
-                  Je propose des consultations en visioconférence ou par téléphone, 
-                  ainsi qu&apos;en présentiel pour les personnes du secteur de Thyez et Haute-Savoie.
-                </p>
-              </div>
+          <CalendlyEmbed />
+
+          <div className="mt-8 grid sm:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-[#E8E0D6]">
+              <h3 className="font-semibold text-[#3A2F25] mb-3 flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Consultations sur rendez-vous
+              </h3>
+              <p className="text-[#7D7068] text-sm">
+                Je m&apos;adapte au mieux à votre emploi du temps. Les créneaux disponibles sont visibles ci-dessus.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-[#E8E0D6]">
+              <h3 className="font-semibold text-[#3A2F25] mb-3 flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                À distance ou en présentiel
+              </h3>
+              <p className="text-[#7D7068] text-sm">
+                Visioconférence, téléphone ou en présentiel dans le secteur de Megève et Haute-Savoie.
+              </p>
             </div>
           </div>
         </div>
@@ -369,23 +346,15 @@ export default function Contact() {
             Je serai ravie de vous accompagner sur votre chemin de découverte de soi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <CalendlyButton variant="white" />
             <a
               href="mailto:lesclesvibratoires@gmail.com"
-              className="px-8 py-4 bg-white text-[#8B6F47] rounded-full hover:bg-[#F5EDE3] transition-all duration-300 font-medium text-lg inline-flex items-center justify-center gap-2"
+              className="px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all duration-300 font-medium text-lg inline-flex items-center justify-center gap-2"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               M&apos;envoyer un email
-            </a>
-            <a
-              href="tel:0626438979"
-              className="px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all duration-300 font-medium text-lg inline-flex items-center justify-center gap-2"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              M&apos;appeler
             </a>
           </div>
         </div>

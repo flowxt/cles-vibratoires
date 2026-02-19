@@ -19,7 +19,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Les Clés Vibratoires | Numérologie Stratégique & Magnétisme",
+  title: "Les Clés Vibratoires | Numérologie Stratégique, Magnétisme & Tarologie",
   description:
     "Accompagnement en numérologie stratégique et soins énergétiques par Marie. Découvrez vos clés de transformation pour mieux vous connaître et vous reconnecter à vous-même.",
   keywords: [
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     "développement personnel",
     "bien-être",
     "Haute-Savoie",
-    "Thyez",
+    "Megève",
   ],
   authors: [{ name: "Marie - Les Clés Vibratoires" }],
   openGraph: {
-    title: "Les Clés Vibratoires | Numérologie Stratégique & Magnétisme",
+    title: "Les Clés Vibratoires | Numérologie Stratégique, Magnétisme & Tarologie",
     description:
       "Accompagnement en numérologie stratégique et soins énergétiques. Découvrez vos clés de transformation.",
     type: "website",

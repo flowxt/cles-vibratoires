@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CalendlyButton from "@/components/CalendlyButton";
 
 export const metadata: Metadata = {
   title: "Numérologie Stratégique® | Les Clés Vibratoires",
@@ -510,12 +511,7 @@ export default function Numerologie() {
           </div>
 
           <div className="text-center mt-10">
-            <Link
-              href="/contact"
-              className="inline-flex px-8 py-4 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-xl hover:-translate-y-1"
-            >
-              Prendre rendez-vous
-            </Link>
+            <CalendlyButton />
           </div>
         </div>
       </section>
@@ -710,15 +706,10 @@ export default function Numerologie() {
             connaître et avancer avec clarté sur votre chemin de vie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="px-8 py-4 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-xl"
-            >
-              Prendre rendez-vous
-            </Link>
+            <CalendlyButton />
             <Link
               href="/soins-energetiques"
-              className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg"
+              className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg inline-flex items-center justify-center"
             >
               Découvrir les soins énergétiques
             </Link>
