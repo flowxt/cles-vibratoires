@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
 
@@ -92,75 +91,122 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
             {/* Numérologie Card */}
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <Link href="/numerologie" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
-                <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-4">
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold mb-2">
                   Numérologie Stratégique®
                 </h3>
-                <p className="text-white/70 text-sm">
+                <p className="text-white/60 text-sm">
                   Thème adulte • Thème enfant • Thème couple • Suivi annuel
                 </p>
               </div>
               <div className="p-6">
-                <p className="text-[#7D7068] mb-6 leading-relaxed">
+                <p className="text-[#7D7068] mb-4 leading-relaxed">
                   Un outil d&apos;analyse et de compréhension de soi pour identifier vos besoins fondamentaux, 
-                  vos dons et talents, vos freins et vos potentiels à activer. 
-                  Ce n&apos;est pas un art divinatoire, mais une approche stratégique de connaissance de soi.
+                  vos dons et talents, vos freins et vos potentiels à activer.
                 </p>
-                <Link
-                  href="/numerologie"
-                  className="inline-flex items-center text-[#8B6F47] font-medium hover:text-[#6B5535] transition-colors"
-                >
+                <span className="inline-flex items-center text-[#8B6F47] font-medium text-sm">
                   En savoir plus
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
+                </span>
               </div>
-            </div>
+            </Link>
 
-            {/* Soins Énergétiques Card */}
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src="/images/energie.jpg"
-                  alt="Soins Énergétiques"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#8B6F47]/80 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="inline-block px-3 py-1 bg-[#d4af37] text-white text-sm rounded-full mb-2">
-                    60€ la séance
-                  </span>
-                  <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-white">
-                    Soins Énergétiques
-                  </h3>
+            {/* Tarologie Card */}
+            <Link href="/tarologie" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+              <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
+                <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
                 </div>
+                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold mb-2">
+                  Tarologie
+                </h3>
+                <p className="text-white/60 text-sm">
+                  Guidance • Psycho-tarot
+                </p>
               </div>
               <div className="p-6">
-                <p className="text-[#7D7068] mb-6 leading-relaxed">
-                  Les soins énergétiques rééquilibrent votre système énergétique, relâchent les tensions 
-                  et favorisent une détente profonde. Un soin doux et non intrusif agissant sur plusieurs plans.
+                <p className="text-[#7D7068] mb-4 leading-relaxed">
+                  Un outil de connaissance de soi et de mise en lumière, pour aller au cœur 
+                  de vos blocages et vous accompagner vers la mise en action.
                 </p>
-                <Link
-                  href="/soins-energetiques"
-                  className="inline-flex items-center text-[#8B6F47] font-medium hover:text-[#6B5535] transition-colors"
-                >
+                <span className="inline-flex items-center text-[#8B6F47] font-medium text-sm">
                   En savoir plus
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
+                </span>
               </div>
-            </div>
+            </Link>
+
+            {/* Soins Énergétiques Card */}
+            <Link href="/soins-energetiques" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+              <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
+                <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold mb-2">
+                  Soins Énergétiques
+                </h3>
+                <p className="text-white/60 text-sm">
+                  À distance • 60€ la séance
+                </p>
+              </div>
+              <div className="p-6">
+                <p className="text-[#7D7068] mb-4 leading-relaxed">
+                  Rééquilibrage du système énergétique, relâchement des tensions 
+                  et détente profonde. Un soin doux agissant sur plusieurs plans.
+                </p>
+                <span className="inline-flex items-center text-[#8B6F47] font-medium text-sm">
+                  En savoir plus
+                  <svg className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </Link>
+
+            {/* Accompagnement Card */}
+            <Link href="/accompagnement" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+              <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
+                <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold mb-2">
+                  Accompagnement
+                </h3>
+                <p className="text-white/60 text-sm">
+                  Parentalité • Couple • Compréhension de soi
+                </p>
+              </div>
+              <div className="p-6">
+                <p className="text-[#7D7068] mb-4 leading-relaxed">
+                  Des formules complètes alliant numérologie et tarologie pour
+                  transformer votre quotidien et vos relations familiales.
+                </p>
+                <span className="inline-flex items-center text-[#8B6F47] font-medium text-sm">
+                  Découvrir les formules
+                  <svg className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
