@@ -234,22 +234,29 @@ export default function Contact() {
                   </Link>
                 </div>
 
-                {/* Accompagnement */}
-                <div className="bg-gradient-to-br from-[#fef3c7]/30 to-white rounded-2xl p-6 border border-[#d4af37]/20">
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="font-[family-name:var(--font-cormorant)] text-lg font-semibold text-[#3A2F25]">
-                      Accompagnement Complet
-                    </h3>
-                    <span className="text-sm font-medium text-[#d4af37] bg-[#fef3c7] px-3 py-1 rounded-full">
-                      Bientôt
-                    </span>
+                {/* Accompagnements */}
+                <div className="bg-gradient-to-br from-[#F5EDE3] to-white rounded-2xl p-6 border border-[#8B6F47]/20">
+                  <h3 className="font-[family-name:var(--font-cormorant)] text-lg font-semibold text-[#3A2F25] mb-1">
+                    Accompagnements
+                  </h3>
+                  <p className="text-[#7D7068] text-xs mb-3">Numérologie & Tarologie</p>
+                  <div className="space-y-2 text-sm text-[#7D7068]">
+                    <div className="flex items-center justify-between py-1.5 border-b border-[#E8E0D6]">
+                      <span>La Boussole Parentale</span>
+                      <span className="font-medium text-[#8B6F47]">500€ / 5h</span>
+                    </div>
+                    <div className="flex items-center justify-between py-1.5 border-b border-[#E8E0D6]">
+                      <span>Relation Parents-Enfant</span>
+                      <span className="font-medium text-[#8B6F47]">500–600€ / 5-6h</span>
+                    </div>
+                    <div className="flex items-center justify-between py-1.5">
+                      <span>Compréhension de Soi</span>
+                      <span className="font-medium text-[#8B6F47]">250€ / 3×1h30</span>
+                    </div>
                   </div>
-                  <p className="text-[#7D7068] text-sm mb-3">
-                    Un suivi personnalisé alliant numérologie, tarologie et autres outils.
-                  </p>
                   <Link
                     href="/accompagnement"
-                    className="text-[#d4af37] hover:text-[#92400e] font-medium text-sm inline-flex items-center gap-1"
+                    className="mt-3 text-[#8B6F47] hover:text-[#6B5535] font-medium text-sm inline-flex items-center gap-1"
                   >
                     En savoir plus
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

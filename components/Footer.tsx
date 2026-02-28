@@ -58,6 +58,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/tarologie"
+                  className="text-[#C4B9AD] hover:text-[#D4AF37] transition-colors"
+                >
+                  Tarologie
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/soins-energetiques"
                   className="text-[#C4B9AD] hover:text-[#D4AF37] transition-colors"
                 >
