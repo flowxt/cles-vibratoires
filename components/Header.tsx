@@ -13,7 +13,7 @@ const prestationsLinks = [
 const navLinks = [
   { href: "/", label: "Accueil" },
   { href: "/a-propos", label: "À propos" },
-  { href: "/accompagnement", label: "Accompagnement" },
+  { href: "/accompagnement", label: "Accompagnements" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -126,12 +126,12 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Accompagnement */}
+            {/* Accompagnements */}
             <Link
               href="/accompagnement"
               className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium text-sm"
             >
-              Accompagnement
+              Accompagnements
             </Link>
 
             {/* Contact */}
@@ -238,7 +238,7 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
                 className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium py-2.5 px-2"
               >
-                Accompagnement
+                Accompagnements
               </Link>
               <Link
                 href="/contact"

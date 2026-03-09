@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Accompagnement | Les Clés Vibratoires",
+  title: "Accompagnements | Les Clés Vibratoires",
   description:
     "Accompagnements personnalisés en numérologie stratégique et tarologie. Parentalité, couple, compréhension de soi. Découvrez les formules proposées par Marie.",
 };
@@ -29,7 +29,7 @@ export default function Accompagnement() {
               Numérologie & Tarologie
             </p>
             <h1 className="font-[family-name:var(--font-cormorant)] text-4xl sm:text-5xl md:text-6xl font-semibold text-[#3A2F25] mb-6">
-              Accompagnement
+              Accompagnements
             </h1>
             <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-8" />
             <p className="text-lg text-[#7D7068] max-w-3xl mx-auto leading-relaxed">
@@ -452,7 +452,7 @@ export default function Accompagnement() {
               <div>
                 <h3 className="font-semibold text-[#3A2F25] mb-1">Les séances</h3>
                 <p className="text-[#7D7068]">
-                  Chaque séance se déroule à distance ou en présentiel (Haute-Savoie).
+                  Chaque séance se déroule à distance, en visioconférence.
                   Le rythme est adapté à votre situation et vos disponibilités.
                 </p>
               </div>

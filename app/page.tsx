@@ -179,7 +179,7 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Accompagnement Card */}
+            {/* Accompagnements Card */}
             <Link href="/accompagnement" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
@@ -188,7 +188,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold mb-2">
-                  Accompagnement
+                  Accompagnements
                 </h3>
                 <p className="text-white/60 text-sm">
                   Parentalité • Couple • Compréhension de soi

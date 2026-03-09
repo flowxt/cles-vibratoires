@@ -77,7 +77,7 @@ export default function Footer() {
                   href="/accompagnement"
                   className="text-[#C4B9AD] hover:text-[#D4AF37] transition-colors"
                 >
-                  Accompagnement
+                  Accompagnements
                 </Link>
               </li>
               <li>
@@ -141,7 +141,7 @@ export default function Footer() {
                 <span>
                   Haute-Savoie (Megève)
                   <br />
-                  <span className="text-sm">Consultations à distance disponibles</span>
+                  <span className="text-sm">Consultations à distance (visioconférence)</span>
                 </span>
               </li>
             </ul>
@@ -149,17 +149,26 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Barre inférieure */}
+      {/* Avertissement */}
       <div className="border-t border-[#4A3F35]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[#8A7F73] text-sm">
-              © {new Date().getFullYear()} Les Clés Vibratoires - Tous droits réservés
-            </p>
-            <p className="text-[#6B6058] text-xs">
-              Les soins énergétiques ne se substituent pas à un suivi médical
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <div className="flex items-center justify-center gap-2.5 text-[#D4AF37]">
+            <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p className="text-sm">
+              Les soins énergétiques ne se substituent pas à un suivi médical.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Barre inférieure */}
+      <div className="border-t border-[#4A3F35]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <p className="text-[#8A7F73] text-xs text-center">
+            © {new Date().getFullYear()} Les Clés Vibratoires - Tous droits réservés
+          </p>
         </div>
       </div>
     </footer>

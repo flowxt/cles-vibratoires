@@ -525,8 +525,7 @@ export default function Numerologie() {
             </h2>
             <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
             <p className="text-[#7D7068]">
-              Les consultations se font principalement <strong className="text-[#3A2F25]">à distance</strong> (visioconférence), 
-              ou à domicile en Haute-Savoie.
+              Les consultations se font <strong className="text-[#3A2F25]">à distance</strong>, en visioconférence.
             </p>
           </div>
 
@@ -571,7 +570,7 @@ export default function Numerologie() {
                   La consultation
                 </h3>
                 <p className="text-[#7D7068]">
-                  Nous échangeons ensemble, principalement en visioconférence (ou à domicile en Haute-Savoie). 
+                  Nous échangeons ensemble en visioconférence. 
                   Je vous présente votre thème, je réponds à vos questions et nous explorons ensemble 
                   les sujets qui vous tiennent à cœur. L&apos;enregistrement est autorisé.
                 </p>
@@ -683,12 +682,11 @@ export default function Numerologie() {
 
             <div className="bg-[#FDFBF8] rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-[#3A2F25] mb-2">
-                Les consultations peuvent-elles se faire à distance ?
+                Les consultations se font-elles à distance ?
               </h3>
               <p className="text-[#7D7068]">
-                Oui, et c&apos;est d&apos;ailleurs le mode privilégié. Les consultations se font principalement 
-                en visioconférence. Il est aussi possible de les réaliser à domicile pour les personnes 
-                du secteur Haute-Savoie. L&apos;échange est tout aussi riche et personnalisé à distance.
+                Oui, toutes les consultations se déroulent à distance, en visioconférence. 
+                L&apos;échange est tout aussi riche et personnalisé qu&apos;en personne.
               </p>
             </div>
           </div>

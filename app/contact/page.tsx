@@ -102,10 +102,10 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-[#3A2F25] mb-1">Localisation</h3>
                     <p className="text-[#7D7068]">
-                      Haute-Savoie (Megève et environs)
+                      Haute-Savoie (Megève)
                     </p>
                     <p className="text-sm text-[#7D7068] mt-1">
-                      Consultations à distance également disponibles
+                      Toutes les consultations se font à distance (visioconférence)
                     </p>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export default function Contact() {
                   <h3 className="font-[family-name:var(--font-cormorant)] text-lg font-semibold text-[#3A2F25] mb-1">
                     Numérologie Stratégique®
                   </h3>
-                  <p className="text-[#7D7068] text-xs mb-3">À distance ou à domicile (Haute-Savoie)</p>
+                  <p className="text-[#7D7068] text-xs mb-3">À distance (visioconférence)</p>
                   <div className="space-y-2 text-sm text-[#7D7068]">
                     <div className="flex items-center justify-between py-1.5 border-b border-[#E8E0D6]">
                       <span className="flex items-center gap-2">
@@ -333,10 +333,10 @@ export default function Contact() {
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                À distance ou en présentiel
+                Consultations à distance
               </h3>
               <p className="text-[#7D7068] text-sm">
-                Visioconférence, téléphone ou en présentiel dans le secteur de Megève et Haute-Savoie.
+                Toutes les consultations se déroulent à distance, en visioconférence ou par téléphone.
               </p>
             </div>
           </div>
