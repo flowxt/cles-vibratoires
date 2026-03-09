@@ -64,7 +64,7 @@ export default function Accompagnement() {
                   </h2>
                 </div>
                 <div className="text-left sm:text-right">
-                  <div className="text-4xl font-bold">500€</div>
+                  <div className="text-4xl font-bold">599€</div>
                   <p className="text-white/60">5h d&apos;accompagnement</p>
                 </div>
               </div>
@@ -206,7 +206,7 @@ export default function Accompagnement() {
                   </h2>
                 </div>
                 <div className="text-left sm:text-right">
-                  <div className="text-4xl font-bold">500–600€</div>
+                  <div className="text-4xl font-bold">499€</div>
                   <p className="text-white/60">5 à 6h d&apos;accompagnement</p>
                 </div>
               </div>

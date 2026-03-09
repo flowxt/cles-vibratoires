@@ -82,7 +82,7 @@ export default function Numerologie() {
 
             {/* Card 2 - L'Arbre */}
             <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#d4af37] to-[#f4e4ba] rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
@@ -339,40 +339,43 @@ export default function Numerologie() {
           <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Thème Adulte */}
             <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300">
-              <div className="bg-gradient-to-r from-[#8B6F47] to-[#C4A265] px-6 py-3">
+              <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Adulte</span>
-                  <span className="text-sm opacity-80">À partir de 24 ans</span>
+                  <span className="text-sm font-semibold">110€</span>
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-4 text-[#7D7068]">
-                  <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm font-medium">Durée : ~2h</span>
+                <div className="flex items-center justify-between mb-4 text-[#7D7068]">
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-sm font-medium">Durée : ~2h</span>
+                  </div>
+                  <span className="text-xs text-[#7D7068]">À partir de 24 ans</span>
                 </div>
                 <ul className="space-y-2.5 text-sm text-[#7D7068]">
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Apprendre à mieux se connaître : dons/talents, besoins fondamentaux, objectif de vie...
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Découvrir vos ambivalences et vos blocages potentiels
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Découvrir votre plan de vie et vos orientations professionnelles
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Connaître votre vibration annuelle pour agir avec stratégie et fluidité
@@ -382,35 +385,38 @@ export default function Numerologie() {
             </div>
 
             {/* Thème Enfant */}
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#C97B5D]/10 hover:shadow-xl transition-all duration-300">
-              <div className="bg-gradient-to-r from-[#C97B5D] to-[#E0A98A] px-6 py-3">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300">
+              <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Enfant</span>
-                  <span className="text-sm opacity-80">Restitué aux parents</span>
+                  <span className="text-sm font-semibold">85€</span>
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-4 text-[#7D7068]">
-                  <svg className="w-4 h-4 text-[#C97B5D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm font-medium">Durée : ~1h30</span>
+                <div className="flex items-center justify-between mb-4 text-[#7D7068]">
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-sm font-medium">Durée : ~1h30</span>
+                  </div>
+                  <span className="text-xs text-[#7D7068]">Restitué aux parents</span>
                 </div>
                 <ul className="space-y-2.5 text-sm text-[#7D7068]">
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#C97B5D] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Mieux comprendre la personnalité de votre enfant
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#C97B5D] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Avoir une meilleure orientation pédagogique adaptée à sa personnalité
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#C97B5D] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Décoder certains comportements (colère, éparpillement, manque de confiance...) et obtenir des clés
@@ -420,35 +426,38 @@ export default function Numerologie() {
             </div>
 
             {/* Thème Couple */}
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#d4af37]/10 hover:shadow-xl transition-all duration-300">
-              <div className="bg-gradient-to-r from-[#d4af37] to-[#f4e4ba] px-6 py-3">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300">
+              <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Couple</span>
-                  <span className="text-sm opacity-80">Dynamique relationnelle</span>
+                  <span className="text-sm font-semibold">149€</span>
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-4 text-[#7D7068]">
-                  <svg className="w-4 h-4 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm font-medium">Durée : ~2h</span>
+                <div className="flex items-center justify-between mb-4 text-[#7D7068]">
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-sm font-medium">Durée : ~2h</span>
+                  </div>
+                  <span className="text-xs text-[#7D7068]">Dynamique relationnelle</span>
                 </div>
                 <ul className="space-y-2.5 text-sm text-[#7D7068]">
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#d4af37] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Analyser la compatibilité et la dynamique de votre couple
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#d4af37] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Comprendre vos complémentarités et points de friction
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#d4af37] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Obtenir des clés pour une relation plus harmonieuse
@@ -458,35 +467,38 @@ export default function Numerologie() {
             </div>
 
             {/* Suivi Annuel */}
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#6B5535]/10 hover:shadow-xl transition-all duration-300">
-              <div className="bg-gradient-to-r from-[#6B5535] to-[#8B6F47] px-6 py-3">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300">
+              <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Suivi Annuel</span>
-                  <span className="text-sm opacity-80">Thème adulte requis</span>
+                  <span className="text-sm font-semibold">99€</span>
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-4 text-[#7D7068]">
-                  <svg className="w-4 h-4 text-[#6B5535]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm font-medium">Durée : ~1h30</span>
+                <div className="flex items-center justify-between mb-4 text-[#7D7068]">
+                  <div className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-sm font-medium">Durée : ~1h30</span>
+                  </div>
+                  <span className="text-xs text-[#7D7068]">Thème adulte requis</span>
                 </div>
                 <ul className="space-y-2.5 text-sm text-[#7D7068]">
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#6B5535] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Bilan sur la compréhension de l&apos;année passée
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#6B5535] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Descriptif détaillé de l&apos;année en cours pour gagner en efficacité
                   </li>
                   <li className="flex items-start gap-2">
-                    <svg className="w-4 h-4 text-[#6B5535] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     Être guidé sur les dates importantes de vos projets
@@ -547,7 +559,7 @@ export default function Numerologie() {
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#d4af37] to-[#f4e4ba] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
                 2
               </div>
               <div>
@@ -578,7 +590,7 @@ export default function Numerologie() {
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#d4af37] to-[#f4e4ba] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
                 4
               </div>
               <div>

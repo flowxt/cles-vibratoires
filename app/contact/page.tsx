@@ -156,39 +156,36 @@ export default function Contact() {
                         </svg>
                         Thème Adulte (dès 24 ans)
                       </span>
-                      <span className="font-medium">~2h</span>
+                      <span className="font-medium text-[#8B6F47]">110€ · ~2h</span>
                     </div>
                     <div className="flex items-center justify-between py-1.5 border-b border-[#E8E0D6]">
                       <span className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-[#C97B5D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         Thème Enfant
                       </span>
-                      <span className="font-medium">~1h30</span>
+                      <span className="font-medium text-[#8B6F47]">85€ · ~1h30</span>
                     </div>
                     <div className="flex items-center justify-between py-1.5 border-b border-[#E8E0D6]">
                       <span className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
                         Thème Couple
                       </span>
-                      <span className="font-medium">~2h</span>
+                      <span className="font-medium text-[#8B6F47]">149€ · ~2h</span>
                     </div>
                     <div className="flex items-center justify-between py-1.5">
                       <span className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-[#6B5535]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                         Suivi Annuel
                       </span>
-                      <span className="font-medium">~1h30</span>
+                      <span className="font-medium text-[#8B6F47]">99€ · ~1h30</span>
                     </div>
                   </div>
-                  <p className="mt-3 text-xs text-[#7D7068] italic">
-                    Tarifs communiqués sur demande
-                  </p>
                   <Link
                     href="/numerologie"
                     className="mt-3 text-[#8B6F47] hover:text-[#6B5535] font-medium text-sm inline-flex items-center gap-1"
@@ -243,11 +240,11 @@ export default function Contact() {
                   <div className="space-y-2 text-sm text-[#7D7068]">
                     <div className="flex items-center justify-between py-1.5 border-b border-[#E8E0D6]">
                       <span>La Boussole Parentale</span>
-                      <span className="font-medium text-[#8B6F47]">500€ / 5h</span>
+                      <span className="font-medium text-[#8B6F47]">599€ / 5h</span>
                     </div>
                     <div className="flex items-center justify-between py-1.5 border-b border-[#E8E0D6]">
                       <span>Relation Parents-Enfant</span>
-                      <span className="font-medium text-[#8B6F47]">500–600€ / 5-6h</span>
+                      <span className="font-medium text-[#8B6F47]">499€ / 5-6h</span>
                     </div>
                     <div className="flex items-center justify-between py-1.5">
                       <span>Compréhension de Soi</span>
