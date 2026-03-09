@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
+import { CALENDLY } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Numérologie Stratégique® | Les Clés Vibratoires",
@@ -338,14 +339,14 @@ export default function Numerologie() {
 
           <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Thème Adulte */}
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Adulte</span>
                   <span className="text-sm font-semibold">110€</span>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <div className="flex items-center justify-between mb-4 text-[#7D7068]">
                   <div className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -382,17 +383,30 @@ export default function Numerologie() {
                   </li>
                 </ul>
               </div>
+              <div className="px-6 pb-6 pt-4 mt-auto border-t border-[#E8E0D6]">
+                <a
+                  href={CALENDLY.themeAdulte}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#8B6F47] text-white text-sm font-medium rounded-full hover:bg-[#6B5535] transition-all duration-300"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Réserver
+                </a>
+              </div>
             </div>
 
             {/* Thème Enfant */}
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Enfant</span>
                   <span className="text-sm font-semibold">85€</span>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <div className="flex items-center justify-between mb-4 text-[#7D7068]">
                   <div className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -423,17 +437,30 @@ export default function Numerologie() {
                   </li>
                 </ul>
               </div>
+              <div className="px-6 pb-6 pt-4 mt-auto border-t border-[#E8E0D6]">
+                <a
+                  href={CALENDLY.themeEnfant}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#8B6F47] text-white text-sm font-medium rounded-full hover:bg-[#6B5535] transition-all duration-300"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Réserver
+                </a>
+              </div>
             </div>
 
             {/* Thème Couple */}
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Couple</span>
                   <span className="text-sm font-semibold">149€</span>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <div className="flex items-center justify-between mb-4 text-[#7D7068]">
                   <div className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -464,17 +491,30 @@ export default function Numerologie() {
                   </li>
                 </ul>
               </div>
+              <div className="px-6 pb-6 pt-4 mt-auto border-t border-[#E8E0D6]">
+                <a
+                  href={CALENDLY.themeCouple}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#8B6F47] text-white text-sm font-medium rounded-full hover:bg-[#6B5535] transition-all duration-300"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Réserver
+                </a>
+              </div>
             </div>
 
             {/* Suivi Annuel */}
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Suivi Annuel</span>
                   <span className="text-sm font-semibold">99€</span>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <div className="flex items-center justify-between mb-4 text-[#7D7068]">
                   <div className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -504,6 +544,19 @@ export default function Numerologie() {
                     Être guidé sur les dates importantes de vos projets
                   </li>
                 </ul>
+              </div>
+              <div className="px-6 pb-6 pt-4 mt-auto border-t border-[#E8E0D6]">
+                <a
+                  href={CALENDLY.suiviAnnuel}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#8B6F47] text-white text-sm font-medium rounded-full hover:bg-[#6B5535] transition-all duration-300"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Réserver
+                </a>
               </div>
             </div>
           </div>

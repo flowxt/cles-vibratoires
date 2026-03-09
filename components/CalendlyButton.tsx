@@ -6,12 +6,14 @@ interface CalendlyButtonProps {
   variant?: "primary" | "outline" | "white";
   className?: string;
   children?: React.ReactNode;
+  href?: string;
 }
 
 export default function CalendlyButton({
   variant = "primary",
   className = "",
   children,
+  href,
 }: CalendlyButtonProps) {
   const baseStyles =
     "inline-flex items-center justify-center gap-2 rounded-full transition-all duration-300 font-medium";
@@ -27,7 +29,7 @@ export default function CalendlyButton({
 
   return (
     <a
-      href={CALENDLY_URL}
+      href={href || CALENDLY_URL}
       target="_blank"
       rel="noopener noreferrer"
       className={`${baseStyles} ${variants[variant]} ${className}`}
