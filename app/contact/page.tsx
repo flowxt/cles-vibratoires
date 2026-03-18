@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact | Les Clés Vibratoires",
@@ -95,6 +96,21 @@ export default function Contact() {
                 Actualité et partages
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Formulaire de contact */}
+      <section className="py-16 bg-[#FDFBF8]">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-cormorant)] text-3xl font-semibold text-[#3A2F25] mb-2 text-center">
+            Envoyez-moi un message
+          </h2>
+          <p className="text-[#7D7068] text-center mb-8">
+            Je vous répondrai dans les meilleurs délais.
+          </p>
+          <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#E8E0D6] shadow-sm">
+            <ContactForm />
           </div>
         </div>
       </section>
