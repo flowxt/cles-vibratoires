@@ -219,7 +219,7 @@ export default function Home() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-20 bg-gradient-to-br from-[#8B6F47] to-[#6B5535] text-white">
+      <section className="py-20 bg-gradient-to-br from-[#FDFBF8] via-[#F5EDE3] to-[#FDFBF8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <Image
@@ -227,14 +227,14 @@ export default function Home() {
               alt=""
               width={140}
               height={140}
-              className="w-32 h-32 sm:w-36 sm:h-36 object-contain mx-auto mb-6 drop-shadow-lg"
+              className="w-32 h-32 sm:w-36 sm:h-36 object-contain mx-auto mb-6"
             />
-            <blockquote className="font-[family-name:var(--font-cormorant)] text-2xl sm:text-3xl font-medium mb-6 leading-relaxed">
+            <blockquote className="font-[family-name:var(--font-cormorant)] text-2xl sm:text-3xl font-medium mb-6 leading-relaxed text-[#3A2F25]">
               Ma vision du soin repose sur le simple fait que je crois que nous avons chacun en nous 
               les clés pour avancer, se retrouver, évoluer, et ainsi se trouver aligné à ses valeurs.
             </blockquote>
             <div className="w-16 h-0.5 bg-[#d4af37] mx-auto mb-6" />
-            <p className="text-white/80">
+            <p className="text-[#8B6F47] font-medium">
               — Marie, Les Clés Vibratoires
             </p>
           </div>
