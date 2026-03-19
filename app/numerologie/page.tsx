@@ -55,10 +55,10 @@ export default function Numerologie() {
               Comment ça fonctionne ?
             </h2>
             <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
-            <p className="text-lg text-[#7D7068] leading-relaxed max-w-3xl mx-auto">
-              La numérologie est un langage symbolique millénaire qui associe les nombres à des 
-              significations profondes. Chaque chiffre porte une vibration, une énergie particulière 
-              qui influence notre personnalité et notre parcours de vie.
+            <p className="text-lg text-[#7D7068] leading-relaxed max-w-3xl mx-auto text-justify">
+              La numérologie est un langage symbolique millénaire inspiré des enseignements de Pythagore, 
+              pour qui « tout est nombre ». Chaque nombre porte une vibration et une signification 
+              particulières, qui influencent notre personnalité et notre chemin de vie.
             </p>
           </div>
 
@@ -74,10 +74,11 @@ export default function Numerologie() {
               <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-3">
                 Votre Identité Complète
               </h3>
-              <p className="text-[#7D7068]">
-                À partir de votre identité complète telle qu&apos;elle figure sur votre carte d&apos;identité 
-                ou acte de naissance, ainsi que votre date de naissance, je calcule vos nombres personnels 
-                qui révèlent votre essence profonde.
+              <p className="text-[#7D7068] text-justify">
+                À partir de votre <span className="underline decoration-[#8B6F47]">identité complète</span> telle 
+                qu&apos;elle figure sur votre carte d&apos;identité ou acte de naissance, ainsi que votre{" "}
+                <span className="underline decoration-[#8B6F47]">date de naissance</span>, je calcule vos nombres 
+                personnels qui révèlent votre essence profonde.
               </p>
             </div>
 
@@ -85,15 +86,17 @@ export default function Numerologie() {
             <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 22V12m0 0l-3-3m3 3l3-3m-3-7a4 4 0 00-4 4c0 1.5.8 2.8 2 3.5M12 2a4 4 0 014 4c0 1.5-.8 2.8-2 3.5M7 9.5C5.2 10 4 11.5 4 13c0 2 1.5 3.5 3.5 3.5H8m8 0h.5c2 0 3.5-1.5 3.5-3.5 0-1.5-1.2-3-3-3.5" />
                 </svg>
               </div>
               <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-3">
                 Votre Arbre Numérologique
               </h3>
-              <p className="text-[#7D7068]">
+              <p className="text-[#7D7068] text-justify">
                 On établit un arbre où chaque nombre correspond à un élément : les racines, le tronc, 
-                l&apos;écorce, les feuilles... Chacun représente un aspect de votre personnalité : 
+                l&apos;écorce, les feuilles...
+                <br />
+                Chacun représente un aspect de votre personnalité : 
                 dons, besoins affectifs, besoins de réalisation, et bien plus.
               </p>
             </div>
@@ -108,7 +111,7 @@ export default function Numerologie() {
               <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-3">
                 Activateur de Potentiels
               </h3>
-              <p className="text-[#7D7068]">
+              <p className="text-[#7D7068] text-justify">
                 La numérologie stratégique® vous révèle vos <strong>dons et talents</strong>, vos 
                 <strong> besoins</strong>, vos <strong>freins</strong> et vos <strong>potentiels à activer</strong>. 
                 Mon rôle est de vous accompagner pour les mettre en lumière et les activer.
@@ -137,7 +140,7 @@ export default function Numerologie() {
                 </svg>
               </div>
               <h3 className="font-semibold text-[#3A2F25] mb-2">Vos dons & talents</h3>
-              <p className="text-[#7D7068] text-sm">
+              <p className="text-[#7D7068] text-sm text-justify">
                 Identifiez vos forces innées, vos capacités naturelles et apprenez à les utiliser 
                 pleinement dans votre vie personnelle et professionnelle.
               </p>
@@ -151,7 +154,7 @@ export default function Numerologie() {
                 </svg>
               </div>
               <h3 className="font-semibold text-[#3A2F25] mb-2">Vos besoins fondamentaux</h3>
-              <p className="text-[#7D7068] text-sm">
+              <p className="text-[#7D7068] text-sm text-justify">
                 Comprenez vos besoins affectifs, vos besoins de réalisation et ce dont vous avez 
                 essentiellement besoin pour vous sentir aligné(e).
               </p>
@@ -165,7 +168,7 @@ export default function Numerologie() {
                 </svg>
               </div>
               <h3 className="font-semibold text-[#3A2F25] mb-2">Vos freins & ambivalences</h3>
-              <p className="text-[#7D7068] text-sm">
+              <p className="text-[#7D7068] text-sm text-justify">
                 Découvrez vos blocages potentiels et vos ambivalences pour mieux les comprendre 
                 et les transformer en leviers de croissance.
               </p>
@@ -179,7 +182,7 @@ export default function Numerologie() {
                 </svg>
               </div>
               <h3 className="font-semibold text-[#3A2F25] mb-2">Vos potentiels à activer</h3>
-              <p className="text-[#7D7068] text-sm">
+              <p className="text-[#7D7068] text-sm text-justify">
                 Révélez les ressources qui sommeillent en vous et activez-les pour avancer 
                 sur votre chemin de vie avec confiance.
               </p>
@@ -193,7 +196,7 @@ export default function Numerologie() {
                 </svg>
               </div>
               <h3 className="font-semibold text-[#3A2F25] mb-2">Votre plan de vie</h3>
-              <p className="text-[#7D7068] text-sm">
+              <p className="text-[#7D7068] text-sm text-justify">
                 Découvrez votre objectif de vie et vers quelles orientations professionnelles 
                 ou personnelles vous diriger naturellement.
               </p>
@@ -207,7 +210,7 @@ export default function Numerologie() {
                 </svg>
               </div>
               <h3 className="font-semibold text-[#3A2F25] mb-2">Votre vibration annuelle</h3>
-              <p className="text-[#7D7068] text-sm">
+              <p className="text-[#7D7068] text-sm text-justify">
                 Comprenez la vibration de votre année personnelle et universelle pour adopter 
                 une attitude stratégique dans vos prises de décision et gagner en fluidité.
               </p>
@@ -236,7 +239,7 @@ export default function Numerologie() {
                 </span>
                 Mieux vous connaître
               </h3>
-              <p className="text-white/80 text-sm">
+              <p className="text-white/80 text-sm text-justify">
                 Vous ressentez le besoin de comprendre qui vous êtes vraiment, 
                 d&apos;identifier vos dons, vos besoins et vos potentiels.
               </p>
@@ -251,7 +254,7 @@ export default function Numerologie() {
                 </span>
                 Vous êtes à un carrefour
               </h3>
-              <p className="text-white/80 text-sm">
+              <p className="text-white/80 text-sm text-justify">
                 Vous traversez une période de questionnement, de transition ou de changement 
                 et cherchez des repères pour avancer.
               </p>
@@ -266,7 +269,7 @@ export default function Numerologie() {
                 </span>
                 Comprendre vos schémas
               </h3>
-              <p className="text-white/80 text-sm">
+              <p className="text-white/80 text-sm text-justify">
                 Certains comportements ou situations se répètent et vous 
                 aimeriez en comprendre le sens pour les dépasser.
               </p>
@@ -281,7 +284,7 @@ export default function Numerologie() {
                 </span>
                 Trouver l&apos;alignement
               </h3>
-              <p className="text-white/80 text-sm">
+              <p className="text-white/80 text-sm text-justify">
                 Vous aspirez à vivre en accord avec vos valeurs profondes et à retrouver 
                 du sens dans votre quotidien.
               </p>
@@ -297,7 +300,7 @@ export default function Numerologie() {
                 </span>
                 Pour votre enfant
               </h3>
-              <p className="text-white/80 text-sm">
+              <p className="text-white/80 text-sm text-justify">
                 Mieux comprendre la personnalité de votre enfant, décoder certains comportements 
                 (colère, éparpillement, manque de confiance...) et obtenir des clés pour avancer avec lui.
               </p>
@@ -313,7 +316,7 @@ export default function Numerologie() {
                 </span>
                 En couple
               </h3>
-              <p className="text-white/80 text-sm">
+              <p className="text-white/80 text-sm text-justify">
                 Comprendre la dynamique de votre couple, vos complémentarités 
                 et vos points de friction pour une relation plus harmonieuse.
               </p>
@@ -373,7 +376,7 @@ export default function Numerologie() {
                     <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Découvrir votre plan de vie et vos orientations professionnelles
+                    Analyse de votre temporalité (plan de vie, saison, année perso) pour agir avec stratégie et fluidité
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -433,7 +436,7 @@ export default function Numerologie() {
                     <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Décoder certains comportements (colère, éparpillement, manque de confiance...) et obtenir des clés
+                    Décoder et comprendre certains comportements (colère, éparpillement, manque de confiance...) permet d&apos;apaiser plus vite certaines tensions
                   </li>
                 </ul>
               </div>
@@ -468,26 +471,26 @@ export default function Numerologie() {
                     </svg>
                     <span className="text-sm font-medium">Durée : ~2h</span>
                   </div>
-                  <span className="text-xs text-[#7D7068]">Dynamique relationnelle</span>
+                  <span className="text-xs text-[#7D7068]">Les 2 partenaires doivent être présents</span>
                 </div>
                 <ul className="space-y-2.5 text-sm text-[#7D7068]">
                   <li className="flex items-start gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Analyser la compatibilité et la dynamique de votre couple
+                    Analyser et comprendre les besoins fondamentaux de chacun
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Comprendre vos complémentarités et points de friction
+                    Comprendre les complémentarités et les points de frictions de votre couple
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Obtenir des clés pour une relation plus harmonieuse
+                    Obtenir des clés pour une relation plus harmonieuse et tolérante
                   </li>
                 </ul>
               </div>
@@ -535,13 +538,19 @@ export default function Numerologie() {
                     <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Descriptif détaillé de l&apos;année en cours pour gagner en efficacité
+                    Découvrir l&apos;orientation de l&apos;année en cours pour gagner en efficacité
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Être guidé sur les dates importantes de vos projets
+                    Vérifier si vous êtes aligné avec votre objectif de vie et vos besoins de réalisations
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-[#8B6F47] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Être guidé dans vos projets
                   </li>
                 </ul>
               </div>
@@ -731,7 +740,9 @@ export default function Numerologie() {
               </h3>
               <div className="text-[#7D7068] space-y-3">
                 <p>
-                  <strong className="text-[#3A2F25]">Enfant mineur :</strong> Le thème est restitué aux parents. 
+                  <strong className="text-[#3A2F25]">Enfant mineur :</strong> Le thème est restitué aux parents, 
+                  sans la présence de l&apos;enfant.
+                  <br /><br />
                   Si l&apos;enfant a plus de 16 ans et qu&apos;il est motivé pour recevoir son thème, il peut participer 
                   à condition d&apos;être accompagné d&apos;un parent et d&apos;avoir déjà fait un travail d&apos;introspection 
                   personnel avec un thérapeute. Le thème nécessite un minimum de connaissance de soi pour 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import CalendlyButton from "@/components/CalendlyButton";
 
 export default function Home() {
@@ -25,7 +26,14 @@ export default function Home() {
               Les Clés Vibratoires
             </h1>
             
-            {/* Separator */}
+            {/* Key icon + Separator */}
+            <Image
+              src="/logo-sansfond.png"
+              alt=""
+              width={40}
+              height={40}
+              className="w-10 h-10 object-contain mx-auto mb-3 opacity-70 animate-fade-in delay-150"
+            />
             <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-8 animate-fade-in delay-200" />
             
             {/* Description */}
@@ -70,9 +78,8 @@ export default function Home() {
               et le fonctionnement de l&apos;esprit humain.
             </p>
             <p className="text-lg text-[#7D7068] leading-relaxed">
-              Pour moi, chaque individu est porteur de ses propres clés de transformation. 
-              Mon rôle est d&apos;accompagner la libération des blocages, d&apos;aider à mieux comprendre 
-              son fonctionnement intérieur et de retrouver l&apos;harmonisation de soi.
+              Mon rôle est de vous accompagner vers une meilleure compréhension de vous-même, 
+              afin de mettre en lumière vos blocages et vous aider à avancer avec plus de clarté.
             </p>
           </div>
         </div>
@@ -86,8 +93,8 @@ export default function Home() {
               Mes Prestations
             </h2>
             <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
-            <p className="text-lg text-[#7D7068] max-w-2xl mx-auto">
-              Un accompagnement personnalisé pour vous aider à activer vos potentiels
+            <p className="text-lg text-[#7D7068] max-w-2xl mx-auto italic">
+              L&apos;énergie et la stratégie au service de l&apos;éveil intérieur.
             </p>
           </div>
 
@@ -215,9 +222,13 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-br from-[#8B6F47] to-[#6B5535] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <svg className="w-12 h-12 mx-auto mb-6 text-[#d4af37]" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-            </svg>
+            <Image
+              src="/logo-sansfond.png"
+              alt=""
+              width={140}
+              height={140}
+              className="w-32 h-32 sm:w-36 sm:h-36 object-contain mx-auto mb-6 drop-shadow-lg"
+            />
             <blockquote className="font-[family-name:var(--font-cormorant)] text-2xl sm:text-3xl font-medium mb-6 leading-relaxed">
               Ma vision du soin repose sur le simple fait que je crois que nous avons chacun en nous 
               les clés pour avancer, se retrouver, évoluer, et ainsi se trouver aligné à ses valeurs.
@@ -300,7 +311,7 @@ export default function Home() {
               Prêt(e) à découvrir vos clés ?
             </h2>
             <p className="text-lg text-[#7D7068] max-w-2xl mx-auto mb-8">
-              Que ce soit pour une consultation en numérologie stratégique ou un soin énergétique, 
+              Que ce soit pour une consultation en numérologie stratégique, en tarologie ou un soin énergétique, 
               je vous accompagne dans votre cheminement vers une meilleure connaissance de vous-même.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
