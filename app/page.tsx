@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import CalendlyButton from "@/components/CalendlyButton";
+import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export default function Home() {
   return (
@@ -28,11 +29,11 @@ export default function Home() {
             
             {/* Key icon + Separator */}
             <Image
-              src="/logo-sansfond.png"
+              src="/cle-marron.png"
               alt=""
-              width={40}
-              height={40}
-              className="w-10 h-10 object-contain mx-auto mb-3 opacity-70 animate-fade-in delay-150"
+              width={44}
+              height={44}
+              className="w-11 h-11 object-contain mx-auto mb-3 animate-fade-in delay-150"
             />
             <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-8 animate-fade-in delay-200" />
             
@@ -69,18 +70,24 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-6">
-              Bienvenue
-            </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-8" />
-            <p className="text-lg text-[#7D7068] leading-relaxed mb-6">
-              Je suis Marie, passionnée depuis mon adolescence par le développement personnel 
-              et le fonctionnement de l&apos;esprit humain.
-            </p>
-            <p className="text-lg text-[#7D7068] leading-relaxed">
-              Mon rôle est de vous accompagner vers une meilleure compréhension de vous-même, 
-              afin de mettre en lumière vos blocages et vous aider à avancer avec plus de clarté.
-            </p>
+            <FadeUp>
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-6">
+                Bienvenue
+              </h2>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-8" />
+            </FadeUp>
+            <FadeUp delay={0.1}>
+              <p className="text-lg text-[#7D7068] leading-relaxed mb-6">
+                Je suis Marie, passionnée depuis mon adolescence par le développement personnel 
+                et le fonctionnement de l&apos;esprit humain.
+              </p>
+            </FadeUp>
+            <FadeUp delay={0.2}>
+              <p className="text-lg text-[#7D7068] leading-relaxed">
+                Mon rôle est de vous accompagner vers une meilleure compréhension de vous-même, 
+                afin de mettre en lumière vos blocages et vous aider à avancer avec plus de clarté.
+              </p>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -88,18 +95,21 @@ export default function Home() {
       {/* Services Section */}
       <section className="py-20 bg-[#FDFBF8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-              Mes Prestations
-            </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
-            <p className="text-lg text-[#7D7068] max-w-2xl mx-auto italic">
-              L&apos;énergie et la stratégie au service de l&apos;éveil intérieur.
-            </p>
-          </div>
+          <FadeUp>
+            <div className="text-center mb-16">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+                Mes Prestations
+              </h2>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
+              <p className="text-lg text-[#7D7068] max-w-2xl mx-auto italic">
+                L&apos;énergie et la stratégie au service de l&apos;éveil intérieur.
+              </p>
+            </div>
+          </FadeUp>
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+          <Stagger className="grid md:grid-cols-2 gap-8 lg:gap-10">
             {/* Numérologie Card */}
+            <StaggerItem>
             <Link href="/numerologie" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
@@ -127,8 +137,10 @@ export default function Home() {
                 </span>
               </div>
             </Link>
+            </StaggerItem>
 
             {/* Tarologie Card */}
+            <StaggerItem>
             <Link href="/tarologie" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
@@ -156,8 +168,10 @@ export default function Home() {
                 </span>
               </div>
             </Link>
+            </StaggerItem>
 
             {/* Soins Énergétiques Card */}
+            <StaggerItem>
             <Link href="/soins-energetiques" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
@@ -185,8 +199,10 @@ export default function Home() {
                 </span>
               </div>
             </Link>
+            </StaggerItem>
 
             {/* Accompagnements Card */}
+            <StaggerItem>
             <Link href="/accompagnement" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
@@ -214,7 +230,8 @@ export default function Home() {
                 </span>
               </div>
             </Link>
-          </div>
+            </StaggerItem>
+          </Stagger>
         </div>
       </section>
 
@@ -222,21 +239,27 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-br from-[#FDFBF8] via-[#F5EDE3] to-[#FDFBF8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <Image
-              src="/logo-sansfond.png"
-              alt=""
-              width={140}
-              height={140}
-              className="w-32 h-32 sm:w-36 sm:h-36 object-contain mx-auto mb-6"
-            />
-            <blockquote className="font-[family-name:var(--font-cormorant)] text-2xl sm:text-3xl font-medium mb-6 leading-relaxed text-[#3A2F25]">
-              Ma vision du soin repose sur le simple fait que je crois que nous avons chacun en nous 
-              les clés pour avancer, se retrouver, évoluer, et ainsi se trouver aligné à ses valeurs.
-            </blockquote>
-            <div className="w-16 h-0.5 bg-[#d4af37] mx-auto mb-6" />
-            <p className="text-[#8B6F47] font-medium">
-              — Marie, Les Clés Vibratoires
-            </p>
+            <ScaleIn>
+              <Image
+                src="/cle-marron.png"
+                alt=""
+                width={120}
+                height={120}
+                className="w-28 h-28 sm:w-32 sm:h-32 object-contain mx-auto mb-6 rotate-90"
+              />
+            </ScaleIn>
+            <FadeUp delay={0.15}>
+              <blockquote className="font-[family-name:var(--font-cormorant)] text-2xl sm:text-3xl font-medium mb-6 leading-relaxed text-[#3A2F25]">
+                Ma vision du soin repose sur le simple fait que je crois que nous avons chacun en nous 
+                les clés pour avancer, se retrouver, évoluer, et ainsi se trouver aligné à ses valeurs.
+              </blockquote>
+            </FadeUp>
+            <FadeIn delay={0.3}>
+              <div className="w-16 h-0.5 bg-[#d4af37] mx-auto mb-6" />
+              <p className="text-[#8B6F47] font-medium">
+                — Marie, Les Clés Vibratoires
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -244,15 +267,18 @@ export default function Home() {
       {/* Values Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-              Mon Approche
-            </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto" />
-          </div>
+          <FadeUp>
+            <div className="text-center mb-16">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+                Mon Approche
+              </h2>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto" />
+            </div>
+          </FadeUp>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Stagger className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Value 1 */}
+            <StaggerItem>
             <div className="text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300">
               <div className="w-16 h-16 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -267,8 +293,10 @@ export default function Home() {
                 dans le respect total de votre parcours.
               </p>
             </div>
+            </StaggerItem>
 
             {/* Value 2 */}
+            <StaggerItem>
             <div className="text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300">
               <div className="w-16 h-16 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -283,8 +311,10 @@ export default function Home() {
                 pour un accompagnement vrai et personnalisé.
               </p>
             </div>
+            </StaggerItem>
 
             {/* Value 3 */}
+            <StaggerItem>
             <div className="text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300 sm:col-span-2 lg:col-span-1">
               <div className="w-16 h-16 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -299,38 +329,41 @@ export default function Home() {
                 Vous restez acteur de votre propre cheminement.
               </p>
             </div>
-          </div>
+            </StaggerItem>
+          </Stagger>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-[#FDFBF8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-[#F5EDE3] to-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center shadow-xl">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-              Prêt(e) à découvrir vos clés ?
-            </h2>
-            <p className="text-lg text-[#7D7068] max-w-2xl mx-auto mb-8">
-              Que ce soit pour une consultation en numérologie stratégique, en tarologie ou un soin énergétique, 
-              je vous accompagne dans votre cheminement vers une meilleure connaissance de vous-même.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CalendlyButton>
-                Prendre rendez-vous
-              </CalendlyButton>
-              <a
-                href="https://instagram.com/lesclesvibratoires"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg inline-flex items-center justify-center gap-2"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-                Suivez-moi sur Instagram
-              </a>
+          <ScaleIn>
+            <div className="bg-gradient-to-br from-[#F5EDE3] to-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center shadow-xl">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+                Prêt(e) à découvrir vos clés ?
+              </h2>
+              <p className="text-lg text-[#7D7068] max-w-2xl mx-auto mb-8">
+                Que ce soit pour une consultation en numérologie stratégique, en tarologie ou un soin énergétique, 
+                je vous accompagne dans votre cheminement vers une meilleure connaissance de vous-même.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <CalendlyButton>
+                  Prendre rendez-vous
+                </CalendlyButton>
+                <a
+                  href="https://instagram.com/lesclesvibratoires"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg inline-flex items-center justify-center gap-2"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                  Suivez-moi sur Instagram
+                </a>
+              </div>
             </div>
-          </div>
+          </ScaleIn>
         </div>
       </section>
     </div>

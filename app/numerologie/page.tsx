@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
 import { CALENDLY } from "@/lib/config";
+import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
   title: "Numérologie Stratégique® | Les Clés Vibratoires",
@@ -18,53 +19,66 @@ export default function Numerologie() {
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-[#d4af37]/10 rounded-full blur-3xl" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#8B6F47] text-sm tracking-[0.3em] uppercase mb-4">
-            Connaissance de soi
-          </p>
-          <h1 className="font-[family-name:var(--font-cormorant)] text-4xl sm:text-5xl md:text-6xl font-semibold text-[#3A2F25] mb-6">
-            Numérologie Stratégique®
-          </h1>
-          <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-8" />
-          <p className="text-lg sm:text-xl text-[#7D7068] leading-relaxed mb-6 max-w-3xl mx-auto">
-            La numérologie stratégique® est une approche moderne et concrète de la numérologie, 
-            développée par Lydie Castells. Elle vous offre une lecture précise de votre personnalité 
-            et sert à <strong className="text-[#8B6F47]">identifier vos besoins fondamentaux</strong>, 
-            avec vos freins et vos potentiels.
-          </p>
+          <FadeUp>
+            <p className="text-[#8B6F47] text-sm tracking-[0.3em] uppercase mb-4">
+              Connaissance de soi
+            </p>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <h1 className="font-[family-name:var(--font-cormorant)] text-4xl sm:text-5xl md:text-6xl font-semibold text-[#3A2F25] mb-6">
+              Numérologie Stratégique®
+            </h1>
+          </FadeUp>
+          <FadeIn delay={0.2}>
+            <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-8" />
+          </FadeIn>
+          <FadeUp delay={0.2}>
+            <p className="text-lg sm:text-xl text-[#7D7068] leading-relaxed mb-6 max-w-3xl mx-auto">
+              La numérologie stratégique® est une approche moderne et concrète de la numérologie, 
+              développée par Lydie Castells. Elle vous offre une lecture précise de votre personnalité 
+              et sert à <strong className="text-[#8B6F47]">identifier vos besoins fondamentaux</strong>, 
+              avec vos freins et vos potentiels.
+            </p>
+          </FadeUp>
 
           {/* Encart important : pas divinatoire */}
-          <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm rounded-xl px-6 py-4 shadow-md border border-[#8B6F47]/10">
-            <div className="flex-shrink-0 w-10 h-10 bg-[#8B6F47]/10 rounded-full flex items-center justify-center">
-              <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+          <ScaleIn delay={0.3}>
+            <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm rounded-xl px-6 py-4 shadow-md border border-[#8B6F47]/10">
+              <div className="flex-shrink-0 w-10 h-10 bg-[#8B6F47]/10 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <p className="text-[#3A2F25] text-sm sm:text-base font-medium text-left">
+                La numérologie stratégique® n&apos;est pas un art divinatoire, mais bien un{" "}
+                <strong className="text-[#8B6F47]">outil d&apos;analyse et de compréhension de soi</strong>.
+              </p>
             </div>
-            <p className="text-[#3A2F25] text-sm sm:text-base font-medium text-left">
-              La numérologie stratégique® n&apos;est pas un art divinatoire, mais bien un{" "}
-              <strong className="text-[#8B6F47]">outil d&apos;analyse et de compréhension de soi</strong>.
-            </p>
-          </div>
+          </ScaleIn>
         </div>
       </section>
 
       {/* Qu'est-ce que la numérologie stratégique */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-              Comment ça fonctionne ?
-            </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
-            <p className="text-lg text-[#7D7068] leading-relaxed max-w-3xl mx-auto text-justify">
-              La numérologie est un langage symbolique millénaire inspiré des enseignements de Pythagore, 
-              pour qui « tout est nombre ». Chaque nombre porte une vibration et une signification 
-              particulières, qui influencent notre personnalité et notre chemin de vie.
-            </p>
-          </div>
+          <FadeUp>
+            <div className="text-center mb-12">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+                Comment ça fonctionne ?
+              </h2>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
+              <p className="text-lg text-[#7D7068] leading-relaxed max-w-3xl mx-auto text-justify">
+                La numérologie est un langage symbolique millénaire inspiré des enseignements de Pythagore, 
+                pour qui « tout est nombre ». Chaque nombre porte une vibration et une signification 
+                particulières, qui influencent notre personnalité et notre chemin de vie.
+              </p>
+            </div>
+          </FadeUp>
 
           {/* Cards explicatives */}
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <Stagger className="grid md:grid-cols-3 gap-8 mt-12">
             {/* Card 1 - Votre Identité */}
+            <StaggerItem>
             <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -81,8 +95,10 @@ export default function Numerologie() {
                 personnels qui révèlent votre essence profonde.
               </p>
             </div>
+            </StaggerItem>
 
             {/* Card 2 - L'Arbre */}
+            <StaggerItem>
             <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,8 +116,10 @@ export default function Numerologie() {
                 dons, besoins affectifs, besoins de réalisation, et bien plus.
               </p>
             </div>
+            </StaggerItem>
 
             {/* Card 3 - Activateur de potentiels */}
+            <StaggerItem>
             <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,22 +135,26 @@ export default function Numerologie() {
                 Mon rôle est de vous accompagner pour les mettre en lumière et les activer.
               </p>
             </div>
-          </div>
+            </StaggerItem>
+          </Stagger>
         </div>
       </section>
 
       {/* Ce que révèle la numérologie - 6 diapos */}
       <section className="py-16 bg-[#FDFBF8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-              Ce que révèle votre étude numérologique
-            </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto" />
-          </div>
+          <FadeUp>
+            <div className="text-center mb-12">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+                Ce que révèle votre étude numérologique
+              </h2>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto" />
+            </div>
+          </FadeUp>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <Stagger className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* 1 - Dons & Talents */}
+            <StaggerItem>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -145,8 +167,10 @@ export default function Numerologie() {
                 pleinement dans votre vie personnelle et professionnelle.
               </p>
             </div>
+            </StaggerItem>
 
             {/* 2 - Besoins fondamentaux */}
+            <StaggerItem>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -159,8 +183,10 @@ export default function Numerologie() {
                 essentiellement besoin pour vous sentir aligné(e).
               </p>
             </div>
+            </StaggerItem>
 
             {/* 3 - Freins & blocages */}
+            <StaggerItem>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -173,8 +199,10 @@ export default function Numerologie() {
                 et les transformer en leviers de croissance.
               </p>
             </div>
+            </StaggerItem>
 
             {/* 4 - Potentiels à activer */}
+            <StaggerItem>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -187,8 +215,10 @@ export default function Numerologie() {
                 sur votre chemin de vie avec confiance.
               </p>
             </div>
+            </StaggerItem>
 
             {/* 5 - Plan de vie & orientation */}
+            <StaggerItem>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -201,8 +231,10 @@ export default function Numerologie() {
                 ou personnelles vous diriger naturellement.
               </p>
             </div>
+            </StaggerItem>
 
             {/* 6 - Vibration annuelle */}
+            <StaggerItem>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -215,21 +247,25 @@ export default function Numerologie() {
                 une attitude stratégique dans vos prises de décision et gagner en fluidité.
               </p>
             </div>
-          </div>
+            </StaggerItem>
+          </Stagger>
         </div>
       </section>
 
       {/* Pour qui */}
       <section className="py-16 bg-gradient-to-br from-[#8B6F47] to-[#6B5535] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold mb-4">
-              Pour qui est la numérologie ?
-            </h2>
-            <div className="w-16 h-0.5 bg-[#d4af37] mx-auto" />
-          </div>
+          <FadeUp>
+            <div className="text-center mb-12">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold mb-4">
+                Pour qui est la numérologie ?
+              </h2>
+              <div className="w-16 h-0.5 bg-[#d4af37] mx-auto" />
+            </div>
+          </FadeUp>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <Stagger className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <StaggerItem>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
@@ -244,7 +280,9 @@ export default function Numerologie() {
                 d&apos;identifier vos dons, vos besoins et vos potentiels.
               </p>
             </div>
+            </StaggerItem>
 
+            <StaggerItem>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
@@ -259,7 +297,9 @@ export default function Numerologie() {
                 et cherchez des repères pour avancer.
               </p>
             </div>
+            </StaggerItem>
 
+            <StaggerItem>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
@@ -274,7 +314,9 @@ export default function Numerologie() {
                 aimeriez en comprendre le sens pour les dépasser.
               </p>
             </div>
+            </StaggerItem>
 
+            <StaggerItem>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
@@ -289,8 +331,10 @@ export default function Numerologie() {
                 du sens dans votre quotidien.
               </p>
             </div>
+            </StaggerItem>
 
             {/* Encart Enfant */}
+            <StaggerItem>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-[#d4af37]/40">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#C97B5D] rounded-full flex items-center justify-center flex-shrink-0">
@@ -305,8 +349,10 @@ export default function Numerologie() {
                 (colère, éparpillement, manque de confiance...) et obtenir des clés pour avancer avec lui.
               </p>
             </div>
+            </StaggerItem>
 
             {/* Encart Couple */}
+            <StaggerItem>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
@@ -321,27 +367,31 @@ export default function Numerologie() {
                 et vos points de friction pour une relation plus harmonieuse.
               </p>
             </div>
-          </div>
+            </StaggerItem>
+          </Stagger>
         </div>
       </section>
 
       {/* Les Prestations */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-              Les Prestations
-            </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
-            <p className="text-lg text-[#7D7068] max-w-3xl mx-auto">
-              Chaque prestation inclut le temps de restitution, le temps de préparation et 
-              d&apos;analyse en amont, ainsi que l&apos;expertise acquise au sein de l&apos;École 
-              De Numérologie Stratégique®.
-            </p>
-          </div>
+          <FadeUp>
+            <div className="text-center mb-12">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+                Les Prestations
+              </h2>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
+              <p className="text-lg text-[#7D7068] max-w-3xl mx-auto">
+                Chaque prestation inclut le temps de restitution, le temps de préparation et 
+                d&apos;analyse en amont, ainsi que l&apos;expertise acquise au sein de l&apos;École 
+                De Numérologie Stratégique®.
+              </p>
+            </div>
+          </FadeUp>
 
-          <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <Stagger className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Thème Adulte */}
+            <StaggerItem>
             <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
@@ -400,8 +450,10 @@ export default function Numerologie() {
                 </a>
               </div>
             </div>
+            </StaggerItem>
 
             {/* Thème Enfant */}
+            <StaggerItem>
             <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
@@ -454,8 +506,10 @@ export default function Numerologie() {
                 </a>
               </div>
             </div>
+            </StaggerItem>
 
             {/* Thème Couple */}
+            <StaggerItem>
             <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
@@ -508,8 +562,10 @@ export default function Numerologie() {
                 </a>
               </div>
             </div>
+            </StaggerItem>
 
             {/* Suivi Annuel */}
+            <StaggerItem>
             <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
@@ -568,103 +624,116 @@ export default function Numerologie() {
                 </a>
               </div>
             </div>
-          </div>
+            </StaggerItem>
+          </Stagger>
 
-          {/* Note sur l'enregistrement */}
-          <div className="max-w-3xl mx-auto mt-10 bg-[#F5EDE3]/50 rounded-xl p-6 border border-[#8B6F47]/10">
-            <div className="flex items-start gap-3">
-              <svg className="w-5 h-5 text-[#8B6F47] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
-              </svg>
-              <p className="text-sm text-[#7D7068]">
-                <strong className="text-[#3A2F25]">Bon à savoir :</strong> Nous ne remettons pas de documents papier, 
-                mais l&apos;enregistrement de la consultation est autorisé. C&apos;est pendant le rendez-vous 
-                que tout se passe !
-              </p>
+          <FadeUp>
+            {/* Note sur l'enregistrement */}
+            <div className="max-w-3xl mx-auto mt-10 bg-[#F5EDE3]/50 rounded-xl p-6 border border-[#8B6F47]/10">
+              <div className="flex items-start gap-3">
+                <svg className="w-5 h-5 text-[#8B6F47] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                </svg>
+                <p className="text-sm text-[#7D7068]">
+                  <strong className="text-[#3A2F25]">Bon à savoir :</strong> Nous ne remettons pas de documents papier, 
+                  mais l&apos;enregistrement de la consultation est autorisé. C&apos;est pendant le rendez-vous 
+                  que tout se passe !
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="text-center mt-10">
-            <CalendlyButton />
-          </div>
+            <div className="text-center mt-10">
+              <CalendlyButton />
+            </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* Déroulement */}
       <section className="py-16 bg-[#FDFBF8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-              Comment se déroule une consultation ?
-            </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
-            <p className="text-[#7D7068]">
-              Les consultations se font <strong className="text-[#3A2F25]">à distance</strong>, en visioconférence.
-            </p>
-          </div>
+          <FadeUp>
+            <div className="text-center mb-12">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+                Comment se déroule une consultation ?
+              </h2>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-6" />
+              <p className="text-[#7D7068]">
+                Les consultations se font <strong className="text-[#3A2F25]">à distance</strong>, en visioconférence.
+              </p>
+            </div>
+          </FadeUp>
 
           <div className="max-w-3xl mx-auto space-y-8">
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                1
+            <FadeUp>
+              <div className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  1
+                </div>
+                <div>
+                  <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-2">
+                    Prise de rendez-vous
+                  </h3>
+                  <p className="text-[#7D7068]">
+                    Contactez-moi pour choisir la prestation qui vous correspond. 
+                    Je vous demanderai votre identité complète telle qu&apos;elle figure sur votre carte d&apos;identité 
+                    ou acte de naissance, ainsi que votre date de naissance.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-2">
-                  Prise de rendez-vous
-                </h3>
-                <p className="text-[#7D7068]">
-                  Contactez-moi pour choisir la prestation qui vous correspond. 
-                  Je vous demanderai votre identité complète telle qu&apos;elle figure sur votre carte d&apos;identité 
-                  ou acte de naissance, ainsi que votre date de naissance.
-                </p>
-              </div>
-            </div>
+            </FadeUp>
 
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                2
+            <FadeUp delay={0.1}>
+              <div className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  2
+                </div>
+                <div>
+                  <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-2">
+                    Préparation de votre thème
+                  </h3>
+                  <p className="text-[#7D7068]">
+                    Avant notre rendez-vous, je consacre plusieurs heures à calculer et analyser 
+                    l&apos;ensemble de vos nombres personnels pour préparer une lecture complète et personnalisée.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-2">
-                  Préparation de votre thème
-                </h3>
-                <p className="text-[#7D7068]">
-                  Avant notre rendez-vous, je consacre plusieurs heures à calculer et analyser 
-                  l&apos;ensemble de vos nombres personnels pour préparer une lecture complète et personnalisée.
-                </p>
-              </div>
-            </div>
+            </FadeUp>
 
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                3
+            <FadeUp delay={0.2}>
+              <div className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  3
+                </div>
+                <div>
+                  <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-2">
+                    La consultation
+                  </h3>
+                  <p className="text-[#7D7068]">
+                    Nous échangeons ensemble en visioconférence. 
+                    Je vous présente votre thème, je réponds à vos questions et nous explorons ensemble 
+                    les sujets qui vous tiennent à cœur. L&apos;enregistrement est autorisé.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-2">
-                  La consultation
-                </h3>
-                <p className="text-[#7D7068]">
-                  Nous échangeons ensemble en visioconférence. 
-                  Je vous présente votre thème, je réponds à vos questions et nous explorons ensemble 
-                  les sujets qui vous tiennent à cœur. L&apos;enregistrement est autorisé.
-                </p>
-              </div>
-            </div>
+            </FadeUp>
 
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                4
+            <FadeUp delay={0.3}>
+              <div className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  4
+                </div>
+                <div>
+                  <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-2">
+                    Vos clés en main
+                  </h3>
+                  <p className="text-[#7D7068]">
+                    Vous repartez avec une compréhension claire de vos nombres et des pistes 
+                    concrètes pour activer vos potentiels et les intégrer dans votre quotidien.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-[#3A2F25] mb-2">
-                  Vos clés en main
-                </h3>
-                <p className="text-[#7D7068]">
-                  Vous repartez avec une compréhension claire de vos nombres et des pistes 
-                  concrètes pour activer vos potentiels et les intégrer dans votre quotidien.
-                </p>
-              </div>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -672,14 +741,17 @@ export default function Numerologie() {
       {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-              Questions Fréquentes
-            </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto" />
-          </div>
+          <FadeUp>
+            <div className="text-center mb-12">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+                Questions Fréquentes
+              </h2>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto" />
+            </div>
+          </FadeUp>
 
           <div className="space-y-6">
+            <FadeUp>
             <div className="bg-[#FDFBF8] rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 La numérologie est-elle une pratique divinatoire ?
@@ -690,7 +762,9 @@ export default function Numerologie() {
                 vos besoins fondamentaux, vos freins et vos potentiels à activer.
               </p>
             </div>
+            </FadeUp>
 
+            <FadeUp>
             <div className="bg-[#FDFBF8] rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 De quelles informations avez-vous besoin ?
@@ -700,7 +774,9 @@ export default function Numerologie() {
                 carte d&apos;identité ou sur votre acte de naissance, ainsi que votre date de naissance complète.
               </p>
             </div>
+            </FadeUp>
 
+            <FadeUp>
             <div className="bg-[#FDFBF8] rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Combien de temps dure une consultation ?
@@ -710,7 +786,9 @@ export default function Numerologie() {
                 1h30 pour un thème enfant, 2h pour un thème couple, et environ 1h30 pour un suivi annuel.
               </p>
             </div>
+            </FadeUp>
 
+            <FadeUp>
             <div className="bg-[#FDFBF8] rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Que comprend le tarif de la prestation ?
@@ -722,7 +800,9 @@ export default function Numerologie() {
                 Numérologie Stratégique®.
               </p>
             </div>
+            </FadeUp>
 
+            <FadeUp>
             <div className="bg-[#FDFBF8] rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Recevrai-je un document écrit ?
@@ -733,7 +813,9 @@ export default function Numerologie() {
                 l&apos;échange en direct est au cœur de l&apos;accompagnement.
               </p>
             </div>
+            </FadeUp>
 
+            <FadeUp>
             <div className="bg-[#FDFBF8] rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Comment se passe le thème pour un enfant mineur ?
@@ -755,7 +837,9 @@ export default function Numerologie() {
                 </p>
               </div>
             </div>
+            </FadeUp>
 
+            <FadeUp>
             <div className="bg-[#FDFBF8] rounded-xl p-6 shadow-md">
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Les consultations se font-elles à distance ?
@@ -765,6 +849,7 @@ export default function Numerologie() {
                 L&apos;échange est tout aussi riche et personnalisé qu&apos;en personne.
               </p>
             </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -772,22 +857,24 @@ export default function Numerologie() {
       {/* CTA */}
       <section className="py-16 bg-[#FDFBF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
-            Prêt(e) à activer vos potentiels ?
-          </h2>
-          <p className="text-lg text-[#7D7068] mb-8">
-            Offrez-vous une consultation en numérologie stratégique® pour mieux vous 
-            connaître et avancer avec clarté sur votre chemin de vie.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <CalendlyButton />
-            <Link
-              href="/soins-energetiques"
-              className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg inline-flex items-center justify-center"
-            >
-              Découvrir les soins énergétiques
-            </Link>
-          </div>
+          <FadeUp>
+            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold text-[#3A2F25] mb-4">
+              Prêt(e) à activer vos potentiels ?
+            </h2>
+            <p className="text-lg text-[#7D7068] mb-8">
+              Offrez-vous une consultation en numérologie stratégique® pour mieux vous 
+              connaître et avancer avec clarté sur votre chemin de vie.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <CalendlyButton />
+              <Link
+                href="/soins-energetiques"
+                className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg inline-flex items-center justify-center"
+              >
+                Découvrir les soins énergétiques
+              </Link>
+            </div>
+          </FadeUp>
         </div>
       </section>
     </div>

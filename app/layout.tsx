@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -50,10 +51,12 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${cormorant.variable} ${lato.variable} antialiased bg-[#FDFBF8]`}
+        className={`${cormorant.variable} ${lato.variable} antialiased bg-[#FDFBF8] overflow-x-hidden`}
       >
         <Header />
-        <main>{children}</main>
+        <main className="overflow-x-hidden">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>

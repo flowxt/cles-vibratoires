@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const prestationsLinks = [
   { href: "/numerologie", label: "Numérologie Stratégique®", desc: "Thème adulte, enfant, couple, suivi annuel" },
@@ -10,19 +12,20 @@ const prestationsLinks = [
   { href: "/soins-energetiques", label: "Soins Énergétiques", desc: "Rééquilibrage énergétique à distance" },
 ];
 
-const navLinks = [
-  { href: "/", label: "Accueil" },
-  { href: "/a-propos", label: "À propos" },
-  { href: "/accompagnement", label: "Accompagnements" },
-  { href: "/contact", label: "Contact" },
-];
+const prestationsPaths = prestationsLinks.map((l) => l.href);
 
 export default function Header() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPrestationsOpen, setIsPrestationsOpen] = useState(false);
   const [isMobilePrestationsOpen, setIsMobilePrestationsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setIsMobilePrestationsOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     return () => {
@@ -41,6 +44,27 @@ export default function Header() {
     }, 150);
   };
 
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
+
+  const isPrestationsActive = prestationsPaths.some((p) => pathname.startsWith(p));
+
+  const navLinkClass = (href: string) =>
+    `relative font-medium text-sm transition-colors duration-300 ${
+      isActive(href)
+        ? "text-[#8B6F47]"
+        : "text-[#3A2F25] hover:text-[#8B6F47]"
+    }`;
+
+  const mobileLinkClass = (href: string) =>
+    `font-medium py-2.5 px-2 transition-colors duration-300 ${
+      isActive(href)
+        ? "text-[#8B6F47]"
+        : "text-[#3A2F25] hover:text-[#8B6F47]"
+    }`;
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#E8E0D6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +72,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
             <Image
-              src="/logo-sansfond.png"
+              src="/cle-marron.png"
               alt="Les Clés Vibratoires"
               width={52}
               height={52}
@@ -62,20 +86,14 @@ export default function Header() {
 
           {/* Navigation Desktop */}
           <nav className="hidden lg:flex items-center gap-8">
-            {/* Accueil */}
-            <Link
-              href="/"
-              className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium text-sm"
-            >
+            <Link href="/" className={navLinkClass("/")}>
               Accueil
+              {isActive("/") && <ActiveIndicator />}
             </Link>
 
-            {/* À propos */}
-            <Link
-              href="/a-propos"
-              className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium text-sm"
-            >
+            <Link href="/a-propos" className={navLinkClass("/a-propos")}>
               À propos
+              {isActive("/a-propos") && <ActiveIndicator />}
             </Link>
 
             {/* Prestations Dropdown */}
@@ -86,7 +104,11 @@ export default function Header() {
               onMouseLeave={handleMouseLeave}
             >
               <button
-                className="flex items-center gap-1 text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium text-sm"
+                className={`flex items-center gap-1 relative font-medium text-sm transition-colors duration-300 ${
+                  isPrestationsActive
+                    ? "text-[#8B6F47]"
+                    : "text-[#3A2F25] hover:text-[#8B6F47]"
+                }`}
                 onClick={() => setIsPrestationsOpen(!isPrestationsOpen)}
               >
                 Prestations
@@ -98,6 +120,7 @@ export default function Header() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
+                {isPrestationsActive && <ActiveIndicator />}
               </button>
 
               {/* Dropdown Menu */}
@@ -114,9 +137,13 @@ export default function Header() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsPrestationsOpen(false)}
-                      className="flex flex-col gap-0.5 px-4 py-3 rounded-xl hover:bg-[#F5EDE3] transition-colors duration-200 group"
+                      className={`flex flex-col gap-0.5 px-4 py-3 rounded-xl transition-colors duration-200 group ${
+                        isActive(link.href) ? "bg-[#F5EDE3]" : "hover:bg-[#F5EDE3]"
+                      }`}
                     >
-                      <span className="font-medium text-sm text-[#3A2F25] group-hover:text-[#8B6F47] transition-colors">
+                      <span className={`font-medium text-sm transition-colors ${
+                        isActive(link.href) ? "text-[#8B6F47]" : "text-[#3A2F25] group-hover:text-[#8B6F47]"
+                      }`}>
                         {link.label}
                       </span>
                       <span className="text-xs text-[#7D7068]">{link.desc}</span>
@@ -126,20 +153,14 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Accompagnements */}
-            <Link
-              href="/accompagnement"
-              className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium text-sm"
-            >
+            <Link href="/accompagnement" className={navLinkClass("/accompagnement")}>
               Accompagnements
+              {isActive("/accompagnement") && <ActiveIndicator />}
             </Link>
 
-            {/* Contact */}
-            <Link
-              href="/contact"
-              className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium text-sm"
-            >
+            <Link href="/contact" className={navLinkClass("/contact")}>
               Contact
+              {isActive("/contact") && <ActiveIndicator />}
             </Link>
 
             <Link
@@ -182,82 +203,98 @@ export default function Header() {
         </div>
 
         {/* Navigation Mobile */}
-        {isMenuOpen && (
-          <nav className="lg:hidden py-4 border-t border-[#E8E0D6]">
-            <div className="flex flex-col gap-1">
-              <Link
-                href="/"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium py-2.5 px-2"
-              >
-                Accueil
-              </Link>
-              <Link
-                href="/a-propos"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium py-2.5 px-2"
-              >
-                À propos
-              </Link>
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.nav
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.25, ease: "easeInOut" }}
+              className="lg:hidden overflow-hidden border-t border-[#E8E0D6]"
+            >
+              <div className="flex flex-col gap-1 py-4">
+                <Link href="/" className={mobileLinkClass("/")}>
+                  Accueil
+                </Link>
+                <Link href="/a-propos" className={mobileLinkClass("/a-propos")}>
+                  À propos
+                </Link>
 
-              {/* Prestations accordéon mobile */}
-              <div>
-                <button
-                  onClick={() => setIsMobilePrestationsOpen(!isMobilePrestationsOpen)}
-                  className="flex items-center justify-between w-full text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium py-2.5 px-2"
-                >
-                  Prestations
-                  <svg
-                    className={`w-4 h-4 transition-transform duration-200 ${isMobilePrestationsOpen ? "rotate-180" : ""}`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+                {/* Prestations accordéon mobile */}
+                <div>
+                  <button
+                    onClick={() => setIsMobilePrestationsOpen(!isMobilePrestationsOpen)}
+                    className={`flex items-center justify-between w-full font-medium py-2.5 px-2 transition-colors duration-300 ${
+                      isPrestationsActive ? "text-[#8B6F47]" : "text-[#3A2F25] hover:text-[#8B6F47]"
+                    }`}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {isMobilePrestationsOpen && (
-                  <div className="pl-4 pb-2 space-y-1">
-                    {prestationsLinks.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        onClick={() => { setIsMenuOpen(false); setIsMobilePrestationsOpen(false); }}
-                        className="block py-2 px-3 rounded-lg text-[#7D7068] hover:text-[#8B6F47] hover:bg-[#F5EDE3] transition-all duration-200"
+                    Prestations
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${isMobilePrestationsOpen ? "rotate-180" : ""}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <AnimatePresence>
+                    {isMobilePrestationsOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.2, ease: "easeInOut" }}
+                        className="overflow-hidden"
                       >
-                        <span className="font-medium text-sm">{link.label}</span>
-                        <span className="block text-xs mt-0.5 opacity-75">{link.desc}</span>
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
+                        <div className="pl-4 pb-2 space-y-1">
+                          {prestationsLinks.map((link) => (
+                            <Link
+                              key={link.href}
+                              href={link.href}
+                              className={`block py-2 px-3 rounded-lg transition-all duration-200 ${
+                                isActive(link.href)
+                                  ? "text-[#8B6F47] bg-[#F5EDE3]"
+                                  : "text-[#7D7068] hover:text-[#8B6F47] hover:bg-[#F5EDE3]"
+                              }`}
+                            >
+                              <span className="font-medium text-sm">{link.label}</span>
+                              <span className="block text-xs mt-0.5 opacity-75">{link.desc}</span>
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
 
-              <Link
-                href="/accompagnement"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium py-2.5 px-2"
-              >
-                Accompagnements
-              </Link>
-              <Link
-                href="/contact"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-[#3A2F25] hover:text-[#8B6F47] transition-colors duration-300 font-medium py-2.5 px-2"
-              >
-                Contact
-              </Link>
-              <Link
-                href="/contact"
-                onClick={() => setIsMenuOpen(false)}
-                className="mt-3 px-6 py-3 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-colors duration-300 font-medium text-center"
-              >
-                Prendre RDV
-              </Link>
-            </div>
-          </nav>
-        )}
+                <Link href="/accompagnement" className={mobileLinkClass("/accompagnement")}>
+                  Accompagnements
+                </Link>
+                <Link href="/contact" className={mobileLinkClass("/contact")}>
+                  Contact
+                </Link>
+                <Link
+                  href="/contact"
+                  className="mt-3 px-6 py-3 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-colors duration-300 font-medium text-center"
+                >
+                  Prendre RDV
+                </Link>
+              </div>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
     </header>
+  );
+}
+
+function ActiveIndicator() {
+  return (
+    <motion.div
+      layoutId="nav-indicator"
+      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#d4af37] rounded-full"
+      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+    />
   );
 }
