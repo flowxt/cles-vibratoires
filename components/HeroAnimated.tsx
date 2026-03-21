@@ -62,7 +62,7 @@ export default function HeroAnimated() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
             {...item(0.45)}
           >
-            <CalendlyButton>Prendre Rendez-vous</CalendlyButton>
+            <CalendlyButton className="btn-shimmer">Prendre Rendez-vous</CalendlyButton>
             <Link
               href="/a-propos"
               className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg inline-flex items-center justify-center"
