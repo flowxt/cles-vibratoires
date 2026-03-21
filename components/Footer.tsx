@@ -102,7 +102,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Colonne 3 - Contact */}
+          {/* Colonne 3 - Contact à voir*/}
           <div>
             <h4 className="font-[family-name:var(--font-cormorant)] text-lg font-medium mb-4 text-white">
               Contact
