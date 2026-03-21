@@ -40,7 +40,7 @@ export default function HeroAnimated() {
               alt=""
               width={44}
               height={44}
-              className="w-11 h-11 object-contain mx-auto mb-3"
+              className="w-11 h-11 object-contain mx-auto mb-3 rotate-90"
               priority
             />
           </motion.div>

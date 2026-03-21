@@ -86,7 +86,7 @@ export function StaggerItem({ children, className, ...props }: Omit<MotionProps,
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
       }}
-      className={className}
+      className={`h-full ${className ?? ""}`}
       {...props}
     >
       {children}

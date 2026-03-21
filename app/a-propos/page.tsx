@@ -200,7 +200,7 @@ export default function APropos() {
 
             <Stagger className="grid md:grid-cols-2 gap-6 mt-12">
               <StaggerItem>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col">
                   <div className="w-12 h-12 bg-[#d4af37] rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -214,7 +214,7 @@ export default function APropos() {
               </StaggerItem>
 
               <StaggerItem>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col">
                   <div className="w-12 h-12 bg-[#d4af37] rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -246,18 +246,18 @@ export default function APropos() {
 
           <Stagger className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <StaggerItem>
-              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-shadow h-full flex flex-col items-center">
                 <div className="w-14 h-14 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🔢</span>
                 </div>
                 <h3 className="font-semibold text-[#3A2F25] mb-1">Numérologie Stratégique®</h3>
                 <p className="text-sm text-[#7D7068]">Lydie Castells</p>
-                <p className="text-xs text-[#8B6F47] mt-1">Formation professionnelle</p>
+                <p className="text-xs text-[#8B6F47] mt-auto pt-2">Formation professionnelle</p>
               </div>
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-shadow h-full flex flex-col items-center">
                 <div className="w-14 h-14 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">✨</span>
                 </div>
@@ -267,7 +267,7 @@ export default function APropos() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-shadow h-full flex flex-col items-center">
                 <div className="w-14 h-14 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🔥</span>
                 </div>
@@ -277,13 +277,13 @@ export default function APropos() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-shadow h-full flex flex-col items-center">
                 <div className="w-14 h-14 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🃏</span>
                 </div>
                 <h3 className="font-semibold text-[#3A2F25] mb-1">Psycho-Tarot</h3>
                 <p className="text-sm text-[#7D7068]">La Tarot Académie — Chiara</p>
-                <p className="text-xs text-[#8B6F47] mt-1">Formation professionnelle</p>
+                <p className="text-xs text-[#8B6F47] mt-auto pt-2">Formation professionnelle</p>
               </div>
             </StaggerItem>
           </Stagger>

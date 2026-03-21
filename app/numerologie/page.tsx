@@ -80,7 +80,7 @@ export default function Numerologie() {
           <Stagger className="grid md:grid-cols-3 gap-8 mt-12">
             {/* Card 1 - Votre Identité */}
             <StaggerItem>
-            <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all">
+            <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all h-full flex flex-col">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
@@ -90,9 +90,9 @@ export default function Numerologie() {
                 Votre Identité Complète
               </h3>
               <p className="text-[#7D7068] text-justify">
-                À partir de votre <span className="underline decoration-[#8B6F47]">identité complète</span> telle 
+                À partir de votre <strong className="text-[#8B6F47]">identité complète</strong> telle 
                 qu&apos;elle figure sur votre carte d&apos;identité ou acte de naissance, ainsi que votre{" "}
-                <span className="underline decoration-[#8B6F47]">date de naissance</span>, je calcule vos nombres 
+                <strong className="text-[#8B6F47]">date de naissance</strong>, je calcule vos nombres 
                 personnels qui révèlent votre essence profonde.
               </p>
             </div>
@@ -100,7 +100,7 @@ export default function Numerologie() {
 
             {/* Card 2 - L'Arbre */}
             <StaggerItem>
-            <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all">
+            <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all h-full flex flex-col">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 22V12m0 0l-3-3m3 3l3-3m-3-7a4 4 0 00-4 4c0 1.5.8 2.8 2 3.5M12 2a4 4 0 014 4c0 1.5-.8 2.8-2 3.5M7 9.5C5.2 10 4 11.5 4 13c0 2 1.5 3.5 3.5 3.5H8m8 0h.5c2 0 3.5-1.5 3.5-3.5 0-1.5-1.2-3-3-3.5" />
@@ -121,7 +121,7 @@ export default function Numerologie() {
 
             {/* Card 3 - Activateur de potentiels */}
             <StaggerItem>
-            <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all">
+            <div className="bg-[#FDFBF8] rounded-2xl p-8 text-center hover:shadow-lg transition-all h-full flex flex-col">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -156,7 +156,7 @@ export default function Numerologie() {
           <Stagger className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* 1 - Dons & Talents */}
             <StaggerItem>
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
@@ -172,7 +172,7 @@ export default function Numerologie() {
 
             {/* 2 - Besoins fondamentaux */}
             <StaggerItem>
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -188,7 +188,7 @@ export default function Numerologie() {
 
             {/* 3 - Freins & blocages */}
             <StaggerItem>
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -204,7 +204,7 @@ export default function Numerologie() {
 
             {/* 4 - Potentiels à activer */}
             <StaggerItem>
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -220,7 +220,7 @@ export default function Numerologie() {
 
             {/* 5 - Plan de vie & orientation */}
             <StaggerItem>
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -236,7 +236,7 @@ export default function Numerologie() {
 
             {/* 6 - Vibration annuelle */}
             <StaggerItem>
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow h-full flex flex-col">
               <div className="w-10 h-10 bg-[#8B6F47]/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-5 h-5 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -267,7 +267,7 @@ export default function Numerologie() {
 
           <Stagger className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <StaggerItem>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -284,7 +284,7 @@ export default function Numerologie() {
             </StaggerItem>
 
             <StaggerItem>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -301,7 +301,7 @@ export default function Numerologie() {
             </StaggerItem>
 
             <StaggerItem>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -318,7 +318,7 @@ export default function Numerologie() {
             </StaggerItem>
 
             <StaggerItem>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -336,7 +336,7 @@ export default function Numerologie() {
 
             {/* Encart Enfant */}
             <StaggerItem>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-[#d4af37]/40">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-[#d4af37]/40 h-full flex flex-col">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#C97B5D] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -354,7 +354,7 @@ export default function Numerologie() {
 
             {/* Encart Couple */}
             <StaggerItem>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col">
               <h3 className="font-semibold text-lg mb-3 flex items-center gap-3">
                 <span className="w-8 h-8 bg-[#d4af37] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -393,7 +393,7 @@ export default function Numerologie() {
           <Stagger className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Thème Adulte */}
             <StaggerItem>
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Adulte</span>
@@ -455,7 +455,7 @@ export default function Numerologie() {
 
             {/* Thème Enfant */}
             <StaggerItem>
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Enfant</span>
@@ -511,7 +511,7 @@ export default function Numerologie() {
 
             {/* Thème Couple */}
             <StaggerItem>
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Thème Couple</span>
@@ -567,7 +567,7 @@ export default function Numerologie() {
 
             {/* Suivi Annuel */}
             <StaggerItem>
-            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 flex flex-col">
+            <div className="bg-[#FDFBF8] rounded-2xl overflow-hidden border border-[#8B6F47]/10 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
               <div className="bg-gradient-to-r from-[#8B6F47] to-[#6B5535] px-6 py-3">
                 <div className="flex items-center justify-between text-white">
                   <span className="font-medium">Suivi Annuel</span>

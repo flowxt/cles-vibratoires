@@ -95,7 +95,7 @@ export default function Accompagnement() {
               <div className="p-8 sm:p-10">
                 <Stagger className="grid md:grid-cols-3 gap-8">
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-6">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-6 h-full flex flex-col">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                           1
@@ -126,7 +126,7 @@ export default function Accompagnement() {
                   </StaggerItem>
 
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-6">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-6 h-full flex flex-col">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                           2
@@ -157,7 +157,7 @@ export default function Accompagnement() {
                   </StaggerItem>
 
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-6">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-6 h-full flex flex-col">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                           3
@@ -236,20 +236,25 @@ export default function Accompagnement() {
               <div className="p-8 sm:p-10">
                 <Stagger className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center h-full flex flex-col">
                       <div className="w-8 h-8 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-xs mb-3 mx-auto">
                         1
                       </div>
                       <h3 className="font-semibold text-[#3A2F25] text-sm mb-1">Thème Enfant</h3>
                       <p className="text-xs text-[#8B6F47] font-medium mb-2">1h30</p>
-                      <p className="text-xs text-[#7D7068]">
-                        Comprendre le fonctionnement de l&apos;enfant à travers la numérologie
+                      <p className="text-xs text-[#7D7068] mb-2">
+                        Mieux comprendre la personnalité de votre enfant.
                       </p>
+                      <ul className="text-xs text-[#7D7068] space-y-1 text-left">
+                        <li className="flex items-start gap-1"><CheckIcon /><span>Identifier ses besoins fondamentaux, ses dons et talents</span></li>
+                        <li className="flex items-start gap-1"><CheckIcon /><span>Identifier ses forces et ses freins</span></li>
+                        <li className="flex items-start gap-1"><CheckIcon /><span>Avoir une meilleure vision de ses potentiels</span></li>
+                      </ul>
                     </div>
                   </StaggerItem>
 
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center h-full flex flex-col">
                       <div className="w-8 h-8 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-xs mb-3 mx-auto">
                         2
                       </div>
@@ -265,7 +270,7 @@ export default function Accompagnement() {
                   </StaggerItem>
 
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center h-full flex flex-col">
                       <div className="w-8 h-8 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-xs mb-3 mx-auto">
                         3
                       </div>
@@ -280,7 +285,7 @@ export default function Accompagnement() {
                   </StaggerItem>
 
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center h-full flex flex-col">
                       <div className="w-8 h-8 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-xs mb-3 mx-auto">
                         4
                       </div>
@@ -293,7 +298,7 @@ export default function Accompagnement() {
                   </StaggerItem>
 
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-5 text-center h-full flex flex-col">
                       <div className="w-8 h-8 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-xs mb-3 mx-auto">
                         5
                       </div>
@@ -360,7 +365,7 @@ export default function Accompagnement() {
               <div className="p-8 sm:p-10">
                 <Stagger className="grid md:grid-cols-3 gap-8">
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-6">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-6 h-full flex flex-col">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                           1
@@ -397,7 +402,7 @@ export default function Accompagnement() {
                   </StaggerItem>
 
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-6">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-6 h-full flex flex-col">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                           2
@@ -426,7 +431,7 @@ export default function Accompagnement() {
                   </StaggerItem>
 
                   <StaggerItem>
-                    <div className="bg-[#FDFBF8] rounded-2xl p-6">
+                    <div className="bg-[#FDFBF8] rounded-2xl p-6 h-full flex flex-col">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 bg-[#8B6F47] rounded-full flex items-center justify-center text-white font-semibold text-sm">
                           3

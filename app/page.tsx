@@ -54,7 +54,7 @@ export default function Home() {
           <Stagger className="grid md:grid-cols-2 gap-8 lg:gap-10">
             {/* Numérologie Card */}
             <StaggerItem>
-            <Link href="/numerologie" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+            <Link href="/numerologie" className="group h-full flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@ export default function Home() {
 
             {/* Tarologie Card */}
             <StaggerItem>
-            <Link href="/tarologie" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+            <Link href="/tarologie" className="group h-full flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,7 +116,7 @@ export default function Home() {
 
             {/* Soins Énergétiques Card */}
             <StaggerItem>
-            <Link href="/soins-energetiques" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+            <Link href="/soins-energetiques" className="group h-full flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,7 +147,7 @@ export default function Home() {
 
             {/* Accompagnements Card */}
             <StaggerItem>
-            <Link href="/accompagnement" className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+            <Link href="/accompagnement" className="group h-full flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
               <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5535] p-8 text-white">
                 <div className="w-12 h-12 bg-white/15 rounded-xl flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -185,11 +185,11 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <ScaleIn>
               <Image
-                src="/cle-marron.png"
-                alt=""
-                width={120}
-                height={120}
-                className="w-28 h-28 sm:w-32 sm:h-32 object-contain mx-auto mb-6 rotate-90"
+                src="/logo1.jpeg"
+                alt="Les Clés Vibratoires"
+                width={140}
+                height={140}
+                className="w-32 h-32 sm:w-36 sm:h-36 object-contain mx-auto mb-6 rounded-2xl"
               />
             </ScaleIn>
             <FadeUp delay={0.15}>
@@ -223,7 +223,7 @@ export default function Home() {
           <Stagger className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Value 1 */}
             <StaggerItem>
-            <div className="text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300">
+            <div className="h-full flex flex-col text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300">
               <div className="w-16 h-16 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -241,7 +241,7 @@ export default function Home() {
 
             {/* Value 2 */}
             <StaggerItem>
-            <div className="text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300">
+            <div className="h-full flex flex-col text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300">
               <div className="w-16 h-16 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -259,7 +259,7 @@ export default function Home() {
 
             {/* Value 3 */}
             <StaggerItem>
-            <div className="text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300 sm:col-span-2 lg:col-span-1">
+            <div className="h-full flex flex-col text-center p-8 rounded-2xl bg-[#FDFBF8] hover:bg-[#F5EDE3]/50 transition-colors duration-300 sm:col-span-2 lg:col-span-1">
               <div className="w-16 h-16 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />

@@ -97,7 +97,7 @@ export default function SoinsEnergetiques() {
 
           <Stagger className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <StaggerItem>
-              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="bg-[#FDFBF8] rounded-xl p-6 h-full flex flex-col text-center hover:shadow-lg transition-all hover:-translate-y-1">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -123,7 +123,7 @@ export default function SoinsEnergetiques() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="bg-[#FDFBF8] rounded-xl p-6 h-full flex flex-col text-center hover:shadow-lg transition-all hover:-translate-y-1">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -149,7 +149,7 @@ export default function SoinsEnergetiques() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="bg-[#FDFBF8] rounded-xl p-6 h-full flex flex-col text-center hover:shadow-lg transition-all hover:-translate-y-1">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -175,7 +175,7 @@ export default function SoinsEnergetiques() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-[#FDFBF8] rounded-xl p-6 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="bg-[#FDFBF8] rounded-xl p-6 h-full flex flex-col text-center hover:shadow-lg transition-all hover:-translate-y-1">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#8B6F47] to-[#C4A265] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"

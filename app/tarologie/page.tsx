@@ -48,7 +48,7 @@ export default function Tarologie() {
           <Stagger className="grid md:grid-cols-2 gap-12">
             {/* Guidance */}
             <StaggerItem>
-              <div className="bg-gradient-to-br from-[#F5EDE3] to-[#FDFBF8] rounded-3xl p-8 sm:p-10 hover:shadow-xl transition-all duration-300">
+              <div className="h-full flex flex-col bg-gradient-to-br from-[#F5EDE3] to-[#FDFBF8] rounded-3xl p-8 sm:p-10 hover:shadow-xl transition-all duration-300">
                 <div className="w-16 h-16 bg-[#8B6F47]/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-[#8B6F47]"
@@ -81,7 +81,7 @@ export default function Tarologie() {
 
             {/* Psycho-Tarot */}
             <StaggerItem>
-              <div className="bg-gradient-to-br from-[#F5EDE3] to-[#FDFBF8] rounded-3xl p-8 sm:p-10 hover:shadow-xl transition-all duration-300">
+              <div className="h-full flex flex-col bg-gradient-to-br from-[#F5EDE3] to-[#FDFBF8] rounded-3xl p-8 sm:p-10 hover:shadow-xl transition-all duration-300">
                 <div className="w-16 h-16 bg-[#d4af37]/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-[#d4af37]"
