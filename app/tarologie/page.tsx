@@ -3,9 +3,10 @@ import Link from "next/link";
 import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
-  title: "Tarologie | Les Clés Vibratoires",
+  title: "Tarologie & Psycho-Tarot",
   description:
-    "Guidance et psycho-tarot avec Marie. La tarologie comme outil de compréhension de soi, de déblocage et de mise en action. Bientôt disponible.",
+    "Guidance et psycho-tarot avec Marie. Un outil d'introspection non divinatoire pour explorer vos blocages inconscients et avancer avec clarté.",
+  alternates: { canonical: "https://www.lesclesvibratoires.fr/tarologie" },
 };
 
 export default function Tarologie() {

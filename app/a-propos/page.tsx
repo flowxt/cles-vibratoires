@@ -3,9 +3,10 @@ import Link from "next/link";
 import { FadeIn, FadeUp, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
-  title: "À Propos | Les Clés Vibratoires - Marie",
+  title: "À Propos — Marie",
   description:
-    "Découvrez le parcours de Marie, praticienne en numérologie stratégique et soins énergétiques. Une approche authentique et bienveillante.",
+    "Découvrez le parcours de Marie, praticienne en numérologie stratégique® et soins énergétiques. Infirmière, maman de 2 enfants neuroatypiques, une approche authentique et bienveillante.",
+  alternates: { canonical: "https://www.lesclesvibratoires.fr/a-propos" },
 };
 
 export default function APropos() {

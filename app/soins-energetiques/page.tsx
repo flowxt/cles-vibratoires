@@ -6,9 +6,10 @@ import { CALENDLY } from "@/lib/config";
 import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
-  title: "Soins Énergétiques | Les Clés Vibratoires",
+  title: "Soins Énergétiques",
   description:
     "Découvrez les soins énergétiques à distance proposés par Marie. Rééquilibrage énergétique, détente profonde et bien-être général. 60€ la séance.",
+  alternates: { canonical: "https://www.lesclesvibratoires.fr/soins-energetiques" },
 };
 
 export default function SoinsEnergetiques() {

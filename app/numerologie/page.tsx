@@ -5,9 +5,10 @@ import { CALENDLY } from "@/lib/config";
 import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
-  title: "Numérologie Stratégique® | Les Clés Vibratoires",
+  title: "Numérologie Stratégique®",
   description:
     "Découvrez la numérologie stratégique® avec Marie. Un outil d'analyse et de compréhension de soi pour identifier vos besoins fondamentaux, vos freins et vos potentiels à activer.",
+  alternates: { canonical: "https://www.lesclesvibratoires.fr/numerologie" },
 };
 
 export default function Numerologie() {

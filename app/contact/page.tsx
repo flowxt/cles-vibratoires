@@ -5,9 +5,10 @@ import ContactForm from "@/components/ContactForm";
 import { FadeIn, FadeUp, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
-  title: "Contact | Les Clés Vibratoires",
+  title: "Contact & Réservation",
   description:
-    "Contactez Marie pour prendre rendez-vous en numérologie stratégique ou soins énergétiques. Consultations à distance.",
+    "Contactez Marie pour prendre rendez-vous en numérologie stratégique® ou soins énergétiques. Consultations à distance, toute la France.",
+  alternates: { canonical: "https://www.lesclesvibratoires.fr/contact" },
 };
 
 export default function Contact() {

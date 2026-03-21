@@ -4,9 +4,10 @@ import { CALENDLY } from "@/lib/config";
 import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
-  title: "Accompagnements | Les Clés Vibratoires",
+  title: "Accompagnements",
   description:
-    "Accompagnements personnalisés en numérologie stratégique et tarologie. Parentalité, couple, compréhension de soi. Découvrez les formules proposées par Marie.",
+    "Accompagnements personnalisés en numérologie stratégique® et tarologie. Parentalité, couple, compréhension de soi. Découvrez les formules proposées par Marie.",
+  alternates: { canonical: "https://www.lesclesvibratoires.fr/accompagnement" },
 };
 
 function CheckIcon() {
