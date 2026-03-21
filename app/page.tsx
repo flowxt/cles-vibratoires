@@ -2,69 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import CalendlyButton from "@/components/CalendlyButton";
 import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
+import HeroAnimated from "@/components/HeroAnimated";
 
 export default function Home() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FDFBF8] via-[#F5EDE3] to-[#FDFBF8]" />
-        
-        {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#8B6F47]/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl" />
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="text-center">
-            {/* Subtitle */}
-            <p className="text-[#8B6F47] text-sm sm:text-base tracking-[0.3em] uppercase mb-6 animate-fade-in">
-              Numérologie Stratégique • Magnétisme • Tarologie
-            </p>
-            
-            {/* Main title */}
-            <h1 className="font-[family-name:var(--font-cormorant)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#3A2F25] mb-6 animate-fade-in delay-100">
-              Les Clés Vibratoires
-            </h1>
-            
-            {/* Key icon + Separator */}
-            <Image
-              src="/cle-marron.png"
-              alt=""
-              width={44}
-              height={44}
-              className="w-11 h-11 object-contain mx-auto mb-3 animate-fade-in delay-150"
-            />
-            <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mb-8 animate-fade-in delay-200" />
-            
-            {/* Description */}
-            <p className="text-lg sm:text-xl text-[#7D7068] max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in delay-300">
-              Découvrez vos clés de transformation pour mieux vous connaître 
-              et vous reconnecter à vous-même, avec authenticité et bienveillance.
-            </p>
-            
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-400">
-              <CalendlyButton>
-                Prendre Rendez-vous
-              </CalendlyButton>
-              <Link
-                href="/a-propos"
-                className="px-8 py-4 border-2 border-[#8B6F47] text-[#8B6F47] rounded-full hover:bg-[#8B6F47] hover:text-white transition-all duration-300 font-medium text-lg inline-flex items-center justify-center"
-              >
-                Découvrir mon approche
-              </Link>
-            </div>
-          </div>
-        </div>
-        
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-[#8B6F47]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
-      </section>
+      <HeroAnimated />
 
       {/* Introduction Section */}
       <section className="py-20 bg-white">
