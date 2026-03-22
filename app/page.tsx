@@ -187,9 +187,9 @@ export default function Home() {
               <Image
                 src="/logo-test.png"
                 alt="Les Clés Vibratoires"
-                width={140}
-                height={140}
-                className="w-32 h-32 sm:w-36 sm:h-36 object-contain mx-auto mb-6"
+                width={180}
+                height={180}
+                className="w-40 h-40 sm:w-44 sm:h-44 object-contain mx-auto mb-6"
               />
             </ScaleIn>
             <FadeUp delay={0.15}>

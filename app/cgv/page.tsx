@@ -30,7 +30,7 @@ export default function CGV() {
       {/* Contenu */}
       <section className="py-16 bg-white">
         <FadeIn>
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-[#7D7068]">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-[#7D7068] text-justify">
 
             <h2 className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-[#3A2F25] mt-10 mb-4">
               Article 1 — Identification du prestataire

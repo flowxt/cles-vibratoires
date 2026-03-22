@@ -757,7 +757,7 @@ export default function Numerologie() {
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 La numérologie est-elle une pratique divinatoire ?
               </h3>
-              <p className="text-[#7D7068]">
+              <p className="text-[#7D7068] text-justify">
                 Non. La numérologie stratégique® n&apos;est pas un art divinatoire. Elle ne prédit pas l&apos;avenir 
                 mais constitue un véritable outil d&apos;analyse et de compréhension de soi. Elle vous aide à identifier 
                 vos besoins fondamentaux, vos freins et vos potentiels à activer.
@@ -770,7 +770,7 @@ export default function Numerologie() {
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 De quelles informations avez-vous besoin ?
               </h3>
-              <p className="text-[#7D7068]">
+              <p className="text-[#7D7068] text-justify">
                 J&apos;ai besoin de votre identité complète telle qu&apos;elle figure sur votre 
                 carte d&apos;identité ou sur votre acte de naissance, ainsi que votre date de naissance complète.
               </p>
@@ -782,7 +782,7 @@ export default function Numerologie() {
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Combien de temps dure une consultation ?
               </h3>
-              <p className="text-[#7D7068]">
+              <p className="text-[#7D7068] text-justify">
                 Cela dépend de la prestation : environ 2h pour un thème adulte, 
                 1h30 pour un thème enfant, 2h pour un thème couple, et environ 1h30 pour un suivi annuel.
               </p>
@@ -794,7 +794,7 @@ export default function Numerologie() {
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Que comprend le tarif de la prestation ?
               </h3>
-              <p className="text-[#7D7068]">
+              <p className="text-[#7D7068] text-justify">
                 Le tarif inclut le temps de restitution du thème lors de la consultation, mais aussi 
                 le temps de préparation et d&apos;analyse en amont (plusieurs heures de travail) ainsi que 
                 l&apos;expertise acquise par des mois de formation et de pratique au sein de l&apos;École De 
@@ -808,7 +808,7 @@ export default function Numerologie() {
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Recevrai-je un document écrit ?
               </h3>
-              <p className="text-[#7D7068]">
+              <p className="text-[#7D7068] text-justify">
                 Nous ne remettons pas de documents papier. En revanche, vous êtes autorisé(e) à 
                 enregistrer la consultation. C&apos;est pendant le rendez-vous que tout se passe : 
                 l&apos;échange en direct est au cœur de l&apos;accompagnement.
@@ -821,7 +821,7 @@ export default function Numerologie() {
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Comment se passe le thème pour un enfant mineur ?
               </h3>
-              <div className="text-[#7D7068] space-y-3">
+              <div className="text-[#7D7068] space-y-3 text-justify">
                 <p>
                   <strong className="text-[#3A2F25]">Enfant mineur :</strong> Le thème est restitué aux parents, 
                   sans la présence de l&apos;enfant.
@@ -845,7 +845,7 @@ export default function Numerologie() {
               <h3 className="font-semibold text-[#3A2F25] mb-2">
                 Les consultations se font-elles à distance ?
               </h3>
-              <p className="text-[#7D7068]">
+              <p className="text-[#7D7068] text-justify">
                 Oui, toutes les consultations se déroulent à distance, en visioconférence. 
                 L&apos;échange est tout aussi riche et personnalisé qu&apos;en personne.
               </p>

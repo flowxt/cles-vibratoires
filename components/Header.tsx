@@ -74,9 +74,9 @@ export default function Header() {
             <Image
               src="/logo-test.png"
               alt="Les Clés Vibratoires"
-              width={52}
-              height={52}
-              className="w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] object-contain"
+              width={64}
+              height={64}
+              className="w-[52px] h-[52px] sm:w-[64px] sm:h-[64px] object-contain"
               priority
             />
             <span className="hidden sm:block font-[family-name:var(--font-cormorant)] text-xl lg:text-2xl font-medium text-[#8B6F47]">
