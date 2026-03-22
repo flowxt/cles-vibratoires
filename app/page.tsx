@@ -185,11 +185,11 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <ScaleIn>
               <Image
-                src="/logo1.jpeg"
+                src="/logo-test.png"
                 alt="Les Clés Vibratoires"
                 width={140}
                 height={140}
-                className="w-32 h-32 sm:w-36 sm:h-36 object-contain mx-auto mb-6 rounded-2xl"
+                className="w-32 h-32 sm:w-36 sm:h-36 object-contain mx-auto mb-6"
               />
             </ScaleIn>
             <FadeUp delay={0.15}>

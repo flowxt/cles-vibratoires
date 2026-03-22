@@ -11,11 +11,11 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="/logo1.jpeg"
+                src="/logo-test.png"
                 alt="Les Clés Vibratoires"
                 width={56}
                 height={56}
-                className="w-14 h-14 object-contain rounded-lg"
+                className="w-14 h-14 object-contain"
               />
               <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-medium text-[#D4AF37]">
                 Les Clés Vibratoires
