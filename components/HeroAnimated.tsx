@@ -38,9 +38,9 @@ export default function HeroAnimated() {
             <Image
               src="/cle-marron.png"
               alt=""
-              width={44}
-              height={44}
-              className="w-11 h-11 object-contain mx-auto mb-3 rotate-90"
+              width={80}
+              height={80}
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain mx-auto mb-3 rotate-90"
               priority
             />
           </motion.div>
