@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
-import { CALENDLY } from "@/lib/config";
+import { CAL } from "@/lib/config";
 import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
@@ -372,7 +372,7 @@ export default function SoinsEnergetiques() {
                       <span className="text-[#7D7068]">Appel avant et après le soin</span>
                     </li>
                   </ul>
-                  <CalendlyButton className="w-full" href={CALENDLY.soinEnergetique} />
+                  <CalendlyButton className="w-full" href={CAL.soinEnergetique} />
                 </div>
               </div>
             </ScaleIn>
@@ -429,7 +429,7 @@ export default function SoinsEnergetiques() {
               Offrez-vous un soin énergétique pour retrouver harmonie et bien-être.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CalendlyButton variant="white" href={CALENDLY.soinEnergetique} />
+              <CalendlyButton variant="white" href={CAL.soinEnergetique} />
               <Link
                 href="/numerologie"
                 className="px-8 py-4 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all duration-300 font-medium text-lg inline-flex items-center justify-center"

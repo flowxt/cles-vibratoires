@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CALENDLY } from "@/lib/config";
+import { CAL } from "@/lib/config";
 import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
@@ -190,7 +190,7 @@ export default function Accompagnement() {
 
                 <div className="mt-8 text-center">
                   <a
-                    href={CALENDLY.appelDecouverte}
+                    href={CAL.appelDecouverte}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-all duration-300 font-medium"
@@ -321,7 +321,7 @@ export default function Accompagnement() {
 
                 <div className="mt-8 text-center">
                   <a
-                    href={CALENDLY.appelDecouverte}
+                    href={CAL.appelDecouverte}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-all duration-300 font-medium"
@@ -473,7 +473,7 @@ export default function Accompagnement() {
 
                 <div className="mt-8 text-center">
                   <a
-                    href={CALENDLY.appelDecouverte}
+                    href={CAL.appelDecouverte}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-[#8B6F47] text-white rounded-full hover:bg-[#6B5535] transition-all duration-300 font-medium"
@@ -579,7 +579,7 @@ export default function Accompagnement() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={CALENDLY.appelDecouverte}
+                href={CAL.appelDecouverte}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-white text-[#8B6F47] rounded-full hover:bg-[#F5EDE3] transition-all duration-300 font-medium text-lg inline-flex items-center justify-center gap-2"

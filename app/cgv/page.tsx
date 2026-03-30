@@ -74,7 +74,7 @@ export default function CGV() {
             <ul className="list-disc pl-6 space-y-1">
               <li>Via le formulaire de contact du site</li>
               <li>Par email à <a href="mailto:lesclesvibratoires@gmail.com" className="text-[#8B6F47] hover:underline">lesclesvibratoires@gmail.com</a></li>
-              <li>Via les liens Calendly disponibles sur le site</li>
+              <li>Via les liens de réservation en ligne disponibles sur le site</li>
             </ul>
             <p>
               Pour les prestations de numérologie, un délai de préparation minimum de 3 semaines est nécessaire 

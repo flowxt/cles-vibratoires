@@ -1,6 +1,6 @@
 "use client";
 
-import { CALENDLY_URL } from "@/lib/config";
+import { CAL_URL } from "@/lib/config";
 
 interface CalendlyButtonProps {
   variant?: "primary" | "outline" | "white";
@@ -29,7 +29,7 @@ export default function CalendlyButton({
 
   return (
     <a
-      href={href || CALENDLY_URL}
+      href={href || CAL_URL}
       target="_blank"
       rel="noopener noreferrer"
       className={`${baseStyles} ${variants[variant]} ${className}`}

@@ -2,17 +2,17 @@
  * Configuration centralisée du site.
  */
 
-const CALENDLY_BASE = "https://calendly.com/lesclesvibratoires";
+const CAL_BASE = "https://cal.eu/lesclesvibratoires";
 
-export const CALENDLY_URL = CALENDLY_BASE;
+export const CAL_URL = CAL_BASE;
 
-export const CALENDLY = {
-  themeAdulte: `${CALENDLY_BASE}/theme-adulte`,
-  themeEnfant: `${CALENDLY_BASE}/theme-enfant`,
-  themeCouple: `${CALENDLY_BASE}/theme-couple`,
-  suiviAnnuel: `${CALENDLY_BASE}/suivi-annuel`,
-  soinEnergetique: `${CALENDLY_BASE}/soin-energetique`,
-  appelDecouverte: `${CALENDLY_BASE}/30min`,
+export const CAL = {
+  themeAdulte: `${CAL_BASE}/theme-adulte`,
+  themeEnfant: `${CAL_BASE}/theme-enfant`,
+  themeCouple: `${CAL_BASE}/theme-couple`,
+  suiviAnnuel: `${CAL_BASE}/suivi-annuel`,
+  soinEnergetique: `${CAL_BASE}/soin-energetique`,
+  appelDecouverte: `${CAL_BASE}/30min`,
 };
 
 export const CONTACT = {

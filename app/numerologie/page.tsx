@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CalendlyButton from "@/components/CalendlyButton";
-import { CALENDLY } from "@/lib/config";
+import { CAL } from "@/lib/config";
 import { FadeIn, FadeUp, ScaleIn, Stagger, StaggerItem } from "@/components/motion";
 
 export const metadata: Metadata = {
@@ -439,7 +439,7 @@ export default function Numerologie() {
               </div>
               <div className="px-6 pb-6 pt-4 mt-auto border-t border-[#E8E0D6]">
                 <a
-                  href={CALENDLY.themeAdulte}
+                  href={CAL.themeAdulte}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#8B6F47] text-white text-sm font-medium rounded-full hover:bg-[#6B5535] transition-all duration-300"
@@ -495,7 +495,7 @@ export default function Numerologie() {
               </div>
               <div className="px-6 pb-6 pt-4 mt-auto border-t border-[#E8E0D6]">
                 <a
-                  href={CALENDLY.themeEnfant}
+                  href={CAL.themeEnfant}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#8B6F47] text-white text-sm font-medium rounded-full hover:bg-[#6B5535] transition-all duration-300"
@@ -551,7 +551,7 @@ export default function Numerologie() {
               </div>
               <div className="px-6 pb-6 pt-4 mt-auto border-t border-[#E8E0D6]">
                 <a
-                  href={CALENDLY.themeCouple}
+                  href={CAL.themeCouple}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#8B6F47] text-white text-sm font-medium rounded-full hover:bg-[#6B5535] transition-all duration-300"
@@ -613,7 +613,7 @@ export default function Numerologie() {
               </div>
               <div className="px-6 pb-6 pt-4 mt-auto border-t border-[#E8E0D6]">
                 <a
-                  href={CALENDLY.suiviAnnuel}
+                  href={CAL.suiviAnnuel}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#8B6F47] text-white text-sm font-medium rounded-full hover:bg-[#6B5535] transition-all duration-300"
