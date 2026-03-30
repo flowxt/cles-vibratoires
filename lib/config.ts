@@ -2,7 +2,7 @@
  * Configuration centralisée du site.
  */
 
-const CAL_BASE = "https://cal.eu/lesclesvibratoires";
+const CAL_BASE = "https://cal.com/marie-m-j4rhdc";
 
 export const CAL_URL = CAL_BASE;
 
