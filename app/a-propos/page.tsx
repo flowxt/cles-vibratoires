@@ -41,7 +41,7 @@ export default function APropos() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <FadeUp>
             <p className="text-xl text-[#7D7068] leading-relaxed">
-              Je m&apos;appelle Marie, j&apos;ai 40 ans et je suis maman de deux enfants de 15 et 12 ans.
+              Je m&apos;appelle Marie, je suis maman de deux adolescents.
               Infirmière de métier, j&apos;ai toujours été passionnée par la compréhension de l&apos;humain.
             </p>
           </FadeUp>
@@ -55,7 +55,7 @@ export default function APropos() {
           </FadeUp>
           <FadeUp>
             <p className="text-lg text-[#7D7068] leading-relaxed">
-              Très tôt, les livres de développement personnel ont ouvert une porte. Puis les formations sont venues 
+              Très tôt, les livres de développement personnel m&apos;ont ouvert une porte. Puis les formations sont venues 
               nourrir cette quête : comprendre comment je fonctionne, apprendre à m&apos;aligner, chercher une version 
               de moi plus juste, plus consciente.
             </p>
@@ -99,13 +99,13 @@ export default function APropos() {
                 La Numérologie — une révélation
               </h3>
               <p className="text-[#7D7068] leading-relaxed">
-                La numérologie a été une véritable révélation. Pour la première fois, j&apos;ai eu la sensation 
+                La numérologie a été une véritable révélation : pour la première fois, j&apos;ai eu la sensation 
                 que quelque chose validait profondément ce que je ressentais depuis toujours. Les nombres ont agi 
-                comme une carte d&apos;identité intérieure. Ils ne me disaient pas quoi faire. Ils me rappelaient qui j&apos;étais.
+                comme une carte d&apos;identité intérieure : ils ne me disaient pas quoi faire mais ils me rappelaient qui j&apos;étais.
               </p>
               <p className="text-[#7D7068] leading-relaxed mt-3">
-                Comprendre mon fonctionnement m&apos;a permis de faire confiance à mon intuition. De me sentir plus 
-                alignée. Plus légitime.
+                Comprendre mon fonctionnement m&apos;a permis de faire confiance à mon intuition, de me sentir plus 
+                alignée, plus légitime.
               </p>
             </div>
           </FadeUp>
@@ -121,7 +121,7 @@ export default function APropos() {
               <p className="text-[#7D7068] leading-relaxed">
                 J&apos;ai découvert le psycho-tarot dans une approche loin de la divination. Une lecture subtile, 
                 introspective, qui permet d&apos;aller explorer les blocages inconscients et d&apos;identifier les ressources 
-                déjà présentes en nous. Un outil puissant pour éclairer ce qui demande à évoluer.
+                déjà présentes en nous. C&apos;est aussi un outil puissant pour éclairer ce qui demande à évoluer.
               </p>
             </div>
           </FadeUp>
@@ -136,11 +136,11 @@ export default function APropos() {
               </h3>
               <p className="text-[#7D7068] leading-relaxed">
                 La numérologie m&apos;a également permis de mieux comprendre mes enfants : leurs forces, leurs fragilités, 
-                leurs besoins propres. Leur éducation m&apos;a appris l&apos;ajustement permanent ainsi qu&apos;à leur faire confiance. 
-                À reconnaître que, souvent, ils savent déjà ce qui est juste pour eux.
+                leurs besoins propres. Leur éducation m&apos;a appris l&apos;ajustement permanent mais aussi à leur faire confiance 
+                et reconnaître que, souvent, ils savent déjà ce qui est juste pour eux.
               </p>
               <p className="text-[#7D7068] leading-relaxed mt-3">
-                Bien sûr, rien n&apos;est parfait. La parentalité reste un apprentissage constant. Mais avec plus de 
+                Bien sûr, rien n&apos;est parfait. La parentalité reste un apprentissage constant, mais avec plus de 
                 compréhension, les relations deviennent plus fluides, plus claires.
               </p>
             </div>
@@ -168,7 +168,7 @@ export default function APropos() {
             <div className="pt-4 text-center">
               <p className="text-lg text-[#7D7068] leading-relaxed">
                 Aujourd&apos;hui, j&apos;accompagne celles et ceux qui ressentent le besoin d&apos;y voir plus clair, 
-                le besoin de mieux se connaître. Celles et ceux qui veulent mieux se comprendre pour avancer 
+                le besoin de mieux se connaître, de mieux se comprendre pour avancer 
                 de manière plus alignée et consciente.
               </p>
               <p className="text-xl text-[#8B6F47] font-medium italic mt-6">

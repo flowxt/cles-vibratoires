@@ -253,13 +253,13 @@ export default function Numerologie() {
         </div>
       </section>
 
-      {/* Pour qui */}
+      {/* Pourquoi faire son thème */}
       <section className="py-16 bg-gradient-to-br from-[#8B6F47] to-[#6B5535] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
             <div className="text-center mb-12">
               <h2 className="font-[family-name:var(--font-cormorant)] text-3xl sm:text-4xl font-semibold mb-4">
-                Pour qui est la numérologie ?
+                Pourquoi faire son thème ?
               </h2>
               <div className="w-16 h-0.5 bg-[#d4af37] mx-auto" />
             </div>
