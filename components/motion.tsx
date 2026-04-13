@@ -1,7 +1,13 @@
 "use client";
 
-import { motion, type HTMLMotionProps } from "framer-motion";
-import { type ReactNode } from "react";
+import { motion, useReducedMotion, type HTMLMotionProps } from "framer-motion";
+import { type ReactNode, useEffect, useState } from "react";
+
+function useHasMounted() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  return mounted;
+}
 
 type MotionProps = {
   children: ReactNode;
@@ -11,9 +17,13 @@ type MotionProps = {
 } & Omit<HTMLMotionProps<"div">, "children">;
 
 export function FadeIn({ children, delay = 0, duration = 0.6, className, ...props }: MotionProps) {
+  const mounted = useHasMounted();
+  const prefersReduced = useReducedMotion();
+  const skip = !mounted || prefersReduced;
+
   return (
     <motion.div
-      initial={{ opacity: 0 }}
+      initial={skip ? false : { opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration, delay, ease: "easeOut" }}
@@ -26,9 +36,13 @@ export function FadeIn({ children, delay = 0, duration = 0.6, className, ...prop
 }
 
 export function FadeUp({ children, delay = 0, duration = 0.6, className, ...props }: MotionProps) {
+  const mounted = useHasMounted();
+  const prefersReduced = useReducedMotion();
+  const skip = !mounted || prefersReduced;
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={skip ? false : { opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration, delay, ease: "easeOut" }}
@@ -41,9 +55,13 @@ export function FadeUp({ children, delay = 0, duration = 0.6, className, ...prop
 }
 
 export function ScaleIn({ children, delay = 0, duration = 0.5, className, ...props }: MotionProps) {
+  const mounted = useHasMounted();
+  const prefersReduced = useReducedMotion();
+  const skip = !mounted || prefersReduced;
+
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.92 }}
+      initial={skip ? false : { opacity: 0, scale: 0.92 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration, delay, ease: "easeOut" }}
@@ -62,9 +80,13 @@ type StaggerProps = {
 } & Omit<HTMLMotionProps<"div">, "children">;
 
 export function Stagger({ children, staggerDelay = 0.08, className, ...props }: StaggerProps) {
+  const mounted = useHasMounted();
+  const prefersReduced = useReducedMotion();
+  const skip = !mounted || prefersReduced;
+
   return (
     <motion.div
-      initial="hidden"
+      initial={skip ? "visible" : "hidden"}
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
       variants={{

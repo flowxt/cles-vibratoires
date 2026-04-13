@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   description:
     "Conditions générales de vente et d'utilisation des prestations Les Clés Vibratoires — Marie.",
   alternates: { canonical: "https://www.lesclesvibratoires.fr/cgv" },
-  robots: { index: false, follow: false },
 };
 
 export default function CGV() {
